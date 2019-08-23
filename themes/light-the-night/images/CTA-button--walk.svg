@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="254px" height="258px" viewBox="0 0 254 258" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 56.3 (81716) - https://sketch.com -->
+    <title>CTA-button--walk</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="50%" y1="50%" x2="50%" y2="-2.48949813e-15%" id="linearGradient-1">
+            <stop stop-color="#6CB5ED" offset="0%"></stop>
+            <stop stop-color="#0E6AA7" offset="79.4601999%"></stop>
+            <stop stop-color="#0E6AA7" offset="92.0634502%"></stop>
+            <stop stop-color="#0E6AA7" offset="100%"></stop>
+        </linearGradient>
+        <circle id="path-2" cx="121" cy="121" r="121"></circle>
+        <filter x="-3.3%" y="-3.3%" width="106.6%" height="108.3%" filterUnits="objectBoundingBox" id="filter-3">
+            <feMorphology radius="6" operator="dilate" in="SourceAlpha" result="shadowSpreadOuter1"></feMorphology>
+            <feOffset dx="0" dy="4" in="shadowSpreadOuter1" result="shadowOffsetOuter1"></feOffset>
+            <feMorphology radius="1" operator="erode" in="SourceAlpha" result="shadowInner"></feMorphology>
+            <feOffset dx="0" dy="4" in="shadowInner" result="shadowInner"></feOffset>
+            <feComposite in="shadowOffsetOuter1" in2="shadowInner" operator="out" result="shadowOffsetOuter1"></feComposite>
+            <feColorMatrix values="0 0 0 0 0.0196078431   0 0 0 0 0.101960784   0 0 0 0 0.149019608  0 0 0 1 0" type="matrix" in="shadowOffsetOuter1"></feColorMatrix>
+        </filter>
+        <text id="text-4" font-family="Gotham-Bold, Gotham" font-size="34" font-weight="bold" letter-spacing="-1.6" fill="#FFFFFF">
+            <tspan x="70.293" y="171">WALK</tspan>
+        </text>
+        <filter x="-2.0%" y="-5.9%" width="104.9%" height="123.5%" filterUnits="objectBoundingBox" id="filter-5">
+            <feOffset dx="0" dy="4" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feColorMatrix values="0 0 0 0 0.0509803922   0 0 0 0 0.0784313725   0 0 0 0 0.184313725  0 0 0 1 0" type="matrix" in="shadowOffsetOuter1"></feColorMatrix>
+        </filter>
+        <path d="M130,60 C134.416667,60 138,56.640625 138,52.5 C138,48.359375 134.416667,45 130,45 C125.583333,45 122,48.359375 122,52.5 C122,56.640625 125.583333,60 130,60 Z M145.125936,83.9086359 L141.316534,82.0032515 L139.730646,77.2559378 C137.327289,70.0542306 130.624049,65.016265 123.021594,65 C117.135823,64.9839704 113.882299,66.6309976 107.767637,69.0692437 C104.236174,70.474061 101.342336,73.1383698 99.642002,76.5293081 L98.5465946,78.7253444 C97.2713441,81.2766218 98.3013541,84.3769084 100.868204,85.6525471 C103.418705,86.9281858 106.525085,85.894757 107.816685,83.3434795 L108.912092,81.1474432 C109.48432,80.0171305 110.432583,79.1290275 111.609737,78.6607551 L115.991367,76.9168439 L113.506264,86.7182706 C112.656097,90.0769143 113.571661,93.6454732 115.942319,96.212898 L125.735589,106.773249 C126.912743,108.048888 127.746561,109.582884 128.171644,111.246058 L131.163578,123.082048 C131.866601,125.84324 134.711391,127.53871 137.507132,126.844375 C140.302873,126.15004 142.019557,123.340405 141.316534,120.579212 L137.686975,106.208093 C137.261891,104.544918 136.428074,102.994775 135.25092,101.735283 L127.811958,93.7100625 L130.624049,82.6168499 L131.523264,85.2811586 C132.389781,87.880878 134.253608,90.0284723 136.706013,91.255669 L140.515415,93.1610535 C143.065916,94.4366922 146.172296,93.4032633 147.463895,90.8519859 C148.722797,88.3168558 147.692787,85.1842746 145.125936,83.9086359 L145.125936,83.9086359 Z M106.944415,107.111377 C106.424916,108.387147 105.645668,109.536915 104.639139,110.49768 L96.5219693,118.388553 C94.4926769,120.357334 94.4926769,123.554634 96.5219693,125.523414 C98.5512617,127.492195 101.830598,127.492195 103.859891,125.523414 L113.503088,116.167768 C114.493383,115.207003 115.272631,114.057235 115.808364,112.781465 L118,107.457882 C109.02241,97.9604838 111.717311,100.874279 110.304923,99 L106.944415,107.111377 L106.944415,107.111377 Z" id="path-6"></path>
+        <filter x="-3.8%" y="-2.4%" width="107.5%" height="109.8%" filterUnits="objectBoundingBox" id="filter-7">
+            <feOffset dx="0" dy="4" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feColorMatrix values="0 0 0 0 0.0196078431   0 0 0 0 0.101960784   0 0 0 0 0.149019608  0 0 0 1 0" type="matrix" in="shadowOffsetOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="main" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="v2" transform="translate(-220.000000, -745.000000)">
+            <g id="main-content" transform="translate(-339.000000, 0.000000)">
+                <g id="section___section--hero" transform="translate(338.000000, 0.000000)">
+                    <g id="CTA-buttons" transform="translate(227.000000, 751.000000)">
+                        <g id="CTA-button--walk">
+                            <g id="Oval" stroke-linecap="round">
+                                <use fill="black" fill-opacity="1" filter="url(#filter-3)" xlink:href="#path-2"></use>
+                                <circle stroke="url(#linearGradient-1)" stroke-width="6" cx="121" cy="121" r="124"></circle>
+                            </g>
+                            <g id="Walk" fill="#FFFFFF" fill-opacity="1">
+                                <use filter="url(#filter-5)" xlink:href="#text-4"></use>
+                                <use xlink:href="#text-4"></use>
+                            </g>
+                            <g id="Shape">
+                                <use fill="black" fill-opacity="1" filter="url(#filter-7)" xlink:href="#path-6"></use>
+                                <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-6"></use>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

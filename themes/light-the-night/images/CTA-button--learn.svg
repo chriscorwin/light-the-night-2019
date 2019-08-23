@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="256px" height="258px" viewBox="0 0 256 258" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 56.3 (81716) - https://sketch.com -->
+    <title>CTA-button--learn</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="50%" y1="100%" x2="50%" y2="-2.48949813e-15%" id="linearGradient-1">
+            <stop stop-color="#EF7B7B" offset="0%"></stop>
+            <stop stop-color="#9E4646" offset="79.2783995%"></stop>
+            <stop stop-color="#9E4646" offset="94.2092483%"></stop>
+            <stop stop-color="#9E4646" offset="100%"></stop>
+        </linearGradient>
+        <circle id="path-2" cx="121" cy="121" r="121"></circle>
+        <filter x="-4.1%" y="-3.3%" width="107.4%" height="108.3%" filterUnits="objectBoundingBox" id="filter-3">
+            <feMorphology radius="6" operator="dilate" in="SourceAlpha" result="shadowSpreadOuter1"></feMorphology>
+            <feOffset dx="-2" dy="4" in="shadowSpreadOuter1" result="shadowOffsetOuter1"></feOffset>
+            <feMorphology radius="1" operator="erode" in="SourceAlpha" result="shadowInner"></feMorphology>
+            <feOffset dx="-2" dy="4" in="shadowInner" result="shadowInner"></feOffset>
+            <feComposite in="shadowOffsetOuter1" in2="shadowInner" operator="out" result="shadowOffsetOuter1"></feComposite>
+            <feColorMatrix values="0 0 0 0 0.0196078431   0 0 0 0 0.101960784   0 0 0 0 0.149019608  0 0 0 1 0" type="matrix" in="shadowOffsetOuter1"></feColorMatrix>
+        </filter>
+        <text id="text-4" font-family="Gotham-Bold, Gotham" font-size="34" font-weight="bold" letter-spacing="-1.6" fill="#FFFFFF">
+            <tspan x="64.436" y="178">LEARN</tspan>
+        </text>
+        <filter x="-1.7%" y="-5.9%" width="103.5%" height="123.5%" filterUnits="objectBoundingBox" id="filter-5">
+            <feOffset dx="0" dy="4" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feColorMatrix values="0 0 0 0 0.0509803922   0 0 0 0 0.0784313725   0 0 0 0 0.184313725  0 0 0 1 0" type="matrix" in="shadowOffsetOuter1"></feColorMatrix>
+        </filter>
+        <path d="M159,86 C159,106.439069 142.433101,123 122,123 C101.566899,123 85,106.439069 85,86 C85,65.5728669 101.566899,49 122,49 C142.433101,49 159,65.5728669 159,86 Z M122.992883,61.233871 C114.862282,61.233871 109.676613,64.6589073 105.604524,70.7461532 C105.076976,71.5347903 105.253472,72.5983911 106.009585,73.1717419 L111.186452,77.0970242 C111.963004,77.6858911 113.069423,77.5457984 113.672762,76.7804355 C116.337956,73.4000081 118.165427,71.439754 122.222,71.439754 C125.269875,71.439754 129.039847,73.4013508 129.039847,76.356875 C129.039847,78.5911976 127.195367,79.7386452 124.185984,81.425875 C120.676355,83.3932903 116.032258,85.842004 116.032258,91.9677419 L116.032258,92.5645161 C116.032258,93.5532218 116.833875,94.3548387 117.822581,94.3548387 L126.177419,94.3548387 C127.166125,94.3548387 127.967742,93.5532218 127.967742,92.5645161 L127.967742,92.3656411 C127.967742,88.1192944 140.378556,87.9425 140.378556,76.4516129 C140.378556,67.7980887 131.402327,61.233871 122.992883,61.233871 L122.992883,61.233871 Z M122,98.233871 C118.215706,98.233871 115.137097,101.31248 115.137097,105.096774 C115.137097,108.880919 118.215706,111.959677 122,111.959677 C125.784294,111.959677 128.862903,108.880919 128.862903,105.096774 C128.862903,101.31248 125.784294,98.233871 122,98.233871 Z" id="path-6"></path>
+        <filter x="-2.7%" y="-1.4%" width="104.1%" height="105.4%" filterUnits="objectBoundingBox" id="filter-7">
+            <feOffset dx="-1" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feColorMatrix values="0 0 0 0 0.0196078431   0 0 0 0 0.101960784   0 0 0 0 0.149019608  0 0 0 1 0" type="matrix" in="shadowOffsetOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="main" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="v2" transform="translate(-802.000000, -745.000000)">
+            <g id="main-content" transform="translate(-339.000000, 0.000000)">
+                <g id="section___section--hero" transform="translate(338.000000, 0.000000)">
+                    <g id="CTA-buttons" transform="translate(227.000000, 751.000000)">
+                        <g id="CTA-button--learn" transform="translate(584.000000, 0.000000)">
+                            <g id="Oval-Copy-2" stroke-linecap="round">
+                                <use fill="black" fill-opacity="1" filter="url(#filter-3)" xlink:href="#path-2"></use>
+                                <circle stroke="url(#linearGradient-1)" stroke-width="6" cx="121" cy="121" r="124"></circle>
+                            </g>
+                            <g id="Learn" fill="#FFFFFF" fill-opacity="1">
+                                <use filter="url(#filter-5)" xlink:href="#text-4"></use>
+                                <use xlink:href="#text-4"></use>
+                            </g>
+                            <g id="Shape">
+                                <use fill="black" fill-opacity="1" filter="url(#filter-7)" xlink:href="#path-6"></use>
+                                <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-6"></use>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

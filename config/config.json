@@ -1,0 +1,28 @@
+{
+	"demoName": "Light the Night 2019",
+	"brandTheme": "ltn",
+	"theme": "light-the-night",
+	"defaultUrl": "/",
+	"env": "production",
+	"herokupipeline": "",
+	"production": {
+		"host": "https://lightthenight2019.herokuapp.com/"
+	},
+	"qa": {
+		"host": "https://lightthenight2019-qa.herokuapp.com/"
+	},
+	"dev": {
+		"host": "https://lightthenight2019-qa.herokuapp.com/"
+	},
+	"local": {
+		"host": "http://localhost:3000/"
+	},
+	"tests": {
+		"headless": true,
+		"imageSnapshotPath": "./test/screenshots/",
+		"mismatchThreshold": 0.01,
+		"timeout": 30000
+	},
+	"gapixelid": "",
+	"presentationid": ""
+}
