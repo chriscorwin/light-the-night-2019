@@ -6,7 +6,7 @@ Demuxe: including \`engine/_wrapper.ejs\` now...
 `);
 %>
 <!DOCTYPE html>
-<html class="light-the-night-theme light-the-night-theme_v1">
+<html class="<% echo(`${locals.urlSlug}-theme ${locals.urlSlug}-theme_v1`) %>">
 	<head>
 		<%- include('includes/global/head') _%>
 		<% if (locals.siteSection) { %>
@@ -14,12 +14,12 @@ Demuxe: including \`engine/_wrapper.ejs\` now...
 		<% } %>
 	</head>
 
-	<body class="light-the-night-theme light-the-night-theme_v1">
+	<body class="<% echo(`${locals.urlSlug}-theme ${locals.urlSlug}-theme_v1`) %>">
 
-		<% if (locals.siteSection) { %>
-		<div id="content-wrapper"  class="container magick-flow_content-wrapper   ">
-			<div id="content" class="app-switcher-one magick-flow_content be-left-<%= locals.sanitizedQueryParams['step']%> was-left-<%= locals.sanitizedQueryParams['step']%>">
-				<%- include(`includes/${locals.siteSection}/${locals.siteSection}-contents`) _%>
+		<% if (locals.urlSlug) { %>
+		<div id="content-wrapper"  class="<% echo(`container ${locals.urlSlug}_content-wrapper`) %>">
+			<div id="content" class="<% echo(`container ${locals.urlSlug}_content-wrapper`) %>>">
+				<%- include(`includes/${locals.urlSlug}/${locals.urlSlug}-contents`) _%>
 			</div>
 		</div>
 		<% } %>
