@@ -36,7 +36,6 @@ console.group(includeDebugInfoStart);
 
 <meta charset="utf-8">
 <link href="https://fonts.googleapis.com/css?family=Roboto+Slab&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="/styles/salesforce-lightning-design-system.css" />
 <link rel="stylesheet" href="/styles/global.css">
 <!-- each page automatically tries to include a css file of the same name -->
 <% if (locals.siteSection && locals.siteSection !== 'magick-flows') { %>
@@ -68,7 +67,6 @@ Demuxe: setting client-side javascript variables from Demuxe \`locals\`
 
 
 <script>
-	const demoMagickFlowDirectoryName = '<%=locals.urlSlug%>';
 	const locals = {};
 <%
 	Object.keys(locals).forEach(function(key, fileIndex) {
@@ -145,14 +143,11 @@ Set: /engine/includes/global/head.ejs:134
 	console.dir(locals);
 	console.groupEnd();
 	const url = new URL( window.location.href );
-	const magickFlows = locals.magickFlows;
 	const urlSlug = '<%=locals.urlSlug%>';
 	const triggerParam = '<%=trigger%>';
 </script>
 
 
-<script type="text/javascript" src="/javascripts/third-party-libraries/highcharts.min.js"></script>
-<script type="text/javascript" src="/javascripts/third-party-libraries/highcharts.more.min.js"></script>
 <script>
 	console.log(`<%=includeDebugInfoEnd%>`);
 	console.groupEnd();
