@@ -37,9 +37,13 @@ console.group(includeDebugInfoStart);
 <meta charset="utf-8">
 <link href="https://fonts.googleapis.com/css?family=Roboto+Slab&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="/styles/global.css">
+<!-- each them automatically tries to include a css file of the same name -->
+<% if (locals.theme && locals.theme !== 'magick-flows') { %>
+<link rel="stylesheet" href="/styles/<%=locals.theme%>.css">
+<% } %>
 <!-- each page automatically tries to include a css file of the same name -->
-<% if (locals.siteSection && locals.siteSection !== 'magick-flows') { %>
-<link rel="stylesheet" href="/styles/<%=locals.siteSection%>.css">
+<% if (locals.urlSlug && locals.urlSlug !== 'magick-flows') { %>
+<link rel="stylesheet" href="/styles/<%=locals.urlSlug%>.css">
 <% } %>
 
 <%

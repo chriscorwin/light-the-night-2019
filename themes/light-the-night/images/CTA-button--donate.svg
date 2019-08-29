@@ -1,61 +1,45 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<svg width="256px" height="258px" viewBox="0 0 256 258" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <!-- Generator: Sketch 56.3 (81716) - https://sketch.com -->
-    <title>CTA-button--donate</title>
-    <desc>Created with Sketch.</desc>
-    <defs>
-        <linearGradient x1="50%" y1="50%" x2="50%" y2="-2.48949813e-15%" id="linearGradient-1">
-            <stop stop-color="#EFD67B" offset="0%"></stop>
-            <stop stop-color="#BC8D60" offset="79.2783995%"></stop>
-            <stop stop-color="#BC8D60" offset="92.0634502%"></stop>
-            <stop stop-color="#BC8D60" offset="100%"></stop>
-        </linearGradient>
-        <circle id="path-2" cx="121" cy="121" r="121"></circle>
-        <filter x="-4.1%" y="-3.3%" width="107.4%" height="108.3%" filterUnits="objectBoundingBox" id="filter-3">
-            <feMorphology radius="6" operator="dilate" in="SourceAlpha" result="shadowSpreadOuter1"></feMorphology>
-            <feOffset dx="-2" dy="4" in="shadowSpreadOuter1" result="shadowOffsetOuter1"></feOffset>
-            <feMorphology radius="1" operator="erode" in="SourceAlpha" result="shadowInner"></feMorphology>
-            <feOffset dx="-2" dy="4" in="shadowInner" result="shadowInner"></feOffset>
-            <feComposite in="shadowOffsetOuter1" in2="shadowInner" operator="out" result="shadowOffsetOuter1"></feComposite>
-            <feColorMatrix values="0 0 0 0 0.0196078431   0 0 0 0 0.101960784   0 0 0 0 0.149019608  0 0 0 1 0" type="matrix" in="shadowOffsetOuter1"></feColorMatrix>
-        </filter>
-        <text id="text-4" font-family="Gotham-Bold, Gotham" font-size="34" font-weight="bold" letter-spacing="-1.6" fill="#FFFFFF">
-            <tspan x="50.32" y="171">DONATE</tspan>
-        </text>
-        <filter x="-1.4%" y="-5.9%" width="102.8%" height="123.5%" filterUnits="objectBoundingBox" id="filter-5">
-            <feOffset dx="0" dy="4" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
-            <feColorMatrix values="0 0 0 0 0.0509803922   0 0 0 0 0.0784313725   0 0 0 0 0.184313725  0 0 0 1 0" type="matrix" in="shadowOffsetOuter1"></feColorMatrix>
-        </filter>
-        <path d="M65.9143484,4.23933834 C58.1012174,-2.22348981 46.4813238,-1.06101109 39.3097821,6.12144675 L36.501047,8.93077034 L33.692312,6.12144675 C26.5350278,-1.06101109 14.9008767,-2.22348981 7.08774573,4.23933834 C-1.86598826,11.6570597 -2.33648702,24.9702089 5.67624945,33.0106868 L33.2645859,60.6610736 C35.0467781,62.4463088 37.9410584,62.4463088 39.7232507,60.6610736 L67.3115871,33.0106868 C75.3385811,24.9702089 74.8680823,11.6570597 65.9143484,4.23933834 Z" id="path-6"></path>
-        <filter x="-2.7%" y="-1.6%" width="104.1%" height="106.5%" filterUnits="objectBoundingBox" id="filter-7">
-            <feOffset dx="-1" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
-            <feColorMatrix values="0 0 0 0 0.0196078431   0 0 0 0 0.101960784   0 0 0 0 0.149019608  0 0 0 1 0" type="matrix" in="shadowOffsetOuter1"></feColorMatrix>
-        </filter>
-    </defs>
-    <g id="main" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <g id="v2" transform="translate(-510.000000, -745.000000)">
-            <g id="main-content" transform="translate(-339.000000, 0.000000)">
-                <g id="section___section--hero" transform="translate(338.000000, 0.000000)">
-                    <g id="CTA-buttons" transform="translate(227.000000, 751.000000)">
-                        <g id="CTA-button--donate" transform="translate(292.000000, 0.000000)">
-                            <g id="Oval-Copy" stroke-linecap="round">
-                                <use fill="black" fill-opacity="1" filter="url(#filter-3)" xlink:href="#path-2"></use>
-                                <circle stroke="url(#linearGradient-1)" stroke-width="6" cx="121" cy="121" r="124"></circle>
-                            </g>
-                            <g id="Donate" fill="#FFFFFF" fill-opacity="1">
-                                <use filter="url(#filter-5)" xlink:href="#text-4"></use>
-                                <use xlink:href="#text-4"></use>
-                            </g>
-                            <g id="heart" transform="translate(85.000000, 55.000000)">
-                                <g id="Path">
-                                    <use fill="black" fill-opacity="1" filter="url(#filter-7)" xlink:href="#path-6"></use>
-                                    <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-6"></use>
-                                </g>
-                            </g>
-                        </g>
-                    </g>
-                </g>
-            </g>
-        </g>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="256" height="258" viewBox="0 0 256 258">
+  <defs>
+    <linearGradient id="cta-button--donate-c" x1="50%" x2="50%" y1="50%" y2="0%">
+      <stop offset="0%" stop-color="#EFD67B"/>
+      <stop offset="79.278%" stop-color="#BC8D60"/>
+      <stop offset="92.063%" stop-color="#BC8D60"/>
+      <stop offset="100%" stop-color="#BC8D60"/>
+    </linearGradient>
+    <circle id="cta-button--donate-b" cx="121" cy="121" r="121"/>
+    <filter id="cta-button--donate-a" width="107.4%" height="108.3%" x="-4.1%" y="-3.3%" filterUnits="objectBoundingBox">
+      <feMorphology in="SourceAlpha" operator="dilate" radius="6" result="shadowSpreadOuter1"/>
+      <feOffset dx="-2" dy="4" in="shadowSpreadOuter1" result="shadowOffsetOuter1"/>
+      <feMorphology in="SourceAlpha" radius="1" result="shadowInner"/>
+      <feOffset dx="-2" dy="4" in="shadowInner" result="shadowInner"/>
+      <feComposite in="shadowOffsetOuter1" in2="shadowInner" operator="out" result="shadowOffsetOuter1"/>
+      <feColorMatrix in="shadowOffsetOuter1" values="0 0 0 0 0.0196078431   0 0 0 0 0.101960784   0 0 0 0 0.149019608  0 0 0 1 0"/>
+    </filter>
+    <text id="cta-button--donate-e" fill="#FFF" font-family="Gotham-Bold, Gotham" font-size="34" font-weight="bold" letter-spacing="-1.6">
+      <tspan x="50.32" y="171">DONATE</tspan>
+    </text>
+    <filter id="cta-button--donate-d" width="102.8%" height="123.5%" x="-1.4%" y="-5.9%" filterUnits="objectBoundingBox">
+      <feOffset dy="4" in="SourceAlpha" result="shadowOffsetOuter1"/>
+      <feColorMatrix in="shadowOffsetOuter1" values="0 0 0 0 0.0509803922   0 0 0 0 0.0784313725   0 0 0 0 0.184313725  0 0 0 1 0"/>
+    </filter>
+    <path id="cta-button--donate-g" d="M65.9143484,4.23933834 C58.1012174,-2.22348981 46.4813238,-1.06101109 39.3097821,6.12144675 L36.501047,8.93077034 L33.692312,6.12144675 C26.5350278,-1.06101109 14.9008767,-2.22348981 7.08774573,4.23933834 C-1.86598826,11.6570597 -2.33648702,24.9702089 5.67624945,33.0106868 L33.2645859,60.6610736 C35.0467781,62.4463088 37.9410584,62.4463088 39.7232507,60.6610736 L67.3115871,33.0106868 C75.3385811,24.9702089 74.8680823,11.6570597 65.9143484,4.23933834 Z"/>
+    <filter id="cta-button--donate-f" width="104.1%" height="106.5%" x="-2.7%" y="-1.6%" filterUnits="objectBoundingBox">
+      <feOffset dx="-1" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"/>
+      <feColorMatrix in="shadowOffsetOuter1" values="0 0 0 0 0.0196078431   0 0 0 0 0.101960784   0 0 0 0 0.149019608  0 0 0 1 0"/>
+    </filter>
+  </defs>
+  <g fill="none" fill-rule="evenodd" transform="translate(8 6)">
+    <g stroke-linecap="round">
+      <use fill="#000" filter="url(#cta-button--donate-a)" xlink:href="#cta-button--donate-b"/>
+      <circle cx="121" cy="121" r="124" stroke="url(#cta-button--donate-c)" stroke-width="6"/>
     </g>
+    <g fill="#FFF">
+      <use filter="url(#cta-button--donate-d)" xlink:href="#cta-button--donate-e"/>
+      <use xlink:href="#cta-button--donate-e"/>
+    </g>
+    <g transform="translate(85 55)">
+      <use fill="#000" filter="url(#cta-button--donate-f)" xlink:href="#cta-button--donate-g"/>
+      <use fill="#FFF" xlink:href="#cta-button--donate-g"/>
+    </g>
+  </g>
 </svg>

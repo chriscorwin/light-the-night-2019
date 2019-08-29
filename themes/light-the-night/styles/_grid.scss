@@ -1,4 +1,4 @@
-@charset "UTF-8";
+
 /**
  * @summary Initializes grid
  *
@@ -7,8 +7,7 @@
  */
 .ltn-grid {
   display: -ms-flexbox;
-  display: flex;
-}
+  display: flex; }
 
 /**
  * @summary Initializes grid
@@ -20,8 +19,7 @@
 .ltn-grid--frame {
   min-width: 100vw;
   min-height: 100vh;
-  overflow: hidden;
-}
+  overflow: hidden; }
 
 /**
  * @summary Initializes grid
@@ -32,8 +30,7 @@
 .ltn-grid_vertical,
 .ltn-grid--vertical {
   -ms-flex-direction: column;
-  flex-direction: column;
-}
+      flex-direction: column; }
 
 /**
  * @summary Initializes grid
@@ -44,8 +41,7 @@
 .ltn-grid_vertical-reverse,
 .ltn-grid--vertical-reverse {
   -ms-flex-direction: column-reverse;
-  flex-direction: column-reverse;
-}
+      flex-direction: column-reverse; }
 
 /**
  * @summary Initializes grid
@@ -56,8 +52,7 @@
 .ltn-grid_reverse,
 .ltn-grid--reverse {
   -ms-flex-direction: row-reverse;
-  flex-direction: row-reverse;
-}
+      flex-direction: row-reverse; }
 
 /**
  * @summary Allows columns to wrap when they exceed 100% of their parent’s width
@@ -67,10 +62,9 @@
  */
 .ltn-wrap {
   -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
+      flex-wrap: wrap;
   -ms-flex-align: start;
-  align-items: flex-start;
-}
+      align-items: flex-start; }
 
 /**
  * @summary Keeps columns on one line. Allows columns to stretch and fill 100% of the parent&rsquo;s width and height.
@@ -80,12 +74,11 @@
  */
 .ltn-nowrap {
   -ms-flex: 1 1 auto;
-  flex: 1 1 auto;
+      flex: 1 1 auto;
   -ms-flex-wrap: nowrap;
-  flex-wrap: nowrap;
+      flex-wrap: nowrap;
   -ms-flex-align: stretch;
-  align-items: stretch;
-}
+      align-items: stretch; }
 
 /**
  * @summary .ltn-{size}-nowrap used for responsive design
@@ -96,46 +89,38 @@
 @media (min-width: 20em) {
   .ltn-x-small-nowrap {
     -ms-flex: 1 1 auto;
-    flex: 1 1 auto;
+        flex: 1 1 auto;
     -ms-flex-wrap: nowrap;
-    flex-wrap: nowrap;
+        flex-wrap: nowrap;
     -ms-flex-align: stretch;
-    align-items: stretch;
-  }
-}
+        align-items: stretch; } }
 
 @media (min-width: 30em) {
   .ltn-small-nowrap {
     -ms-flex: 1 1 auto;
-    flex: 1 1 auto;
+        flex: 1 1 auto;
     -ms-flex-wrap: nowrap;
-    flex-wrap: nowrap;
+        flex-wrap: nowrap;
     -ms-flex-align: stretch;
-    align-items: stretch;
-  }
-}
+        align-items: stretch; } }
 
 @media (min-width: 48em) {
   .ltn-medium-nowrap {
     -ms-flex: 1 1 auto;
-    flex: 1 1 auto;
+        flex: 1 1 auto;
     -ms-flex-wrap: nowrap;
-    flex-wrap: nowrap;
+        flex-wrap: nowrap;
     -ms-flex-align: stretch;
-    align-items: stretch;
-  }
-}
+        align-items: stretch; } }
 
 @media (min-width: 64em) {
   .ltn-large-nowrap {
     -ms-flex: 1 1 auto;
-    flex: 1 1 auto;
+        flex: 1 1 auto;
     -ms-flex-wrap: nowrap;
-    flex-wrap: nowrap;
+        flex-wrap: nowrap;
     -ms-flex-align: stretch;
-    align-items: stretch;
-  }
-}
+        align-items: stretch; } }
 
 /**
  * @summary Apply 12px gutters to each grid column when you add this class to an `ltn-grid` element
@@ -144,13 +129,11 @@
  */
 .ltn-gutters {
   margin-right: -0.75rem;
-  margin-left: -0.75rem;
-}
+  margin-left: -0.75rem; }
 
 .ltn-gutters .ltn-col {
   padding-right: 0.75rem;
-  padding-left: 0.75rem;
-}
+  padding-left: 0.75rem; }
 
 /**
  * @summary Apply 2px gutters to each grid column when you add this class to an `ltn-grid` element
@@ -159,13 +142,11 @@
  */
 .ltn-gutters_xxx-small {
   margin-right: -0.125rem;
-  margin-left: -0.125rem;
-}
+  margin-left: -0.125rem; }
 
 .ltn-gutters_xxx-small .ltn-col {
   padding-right: 0.125rem;
-  padding-left: 0.125rem;
-}
+  padding-left: 0.125rem; }
 
 /**
  * @summary Apply 4px gutters to each grid column when you add this class to an `ltn-grid` element
@@ -174,13 +155,11 @@
  */
 .ltn-gutters_xx-small {
   margin-right: -0.25rem;
-  margin-left: -0.25rem;
-}
+  margin-left: -0.25rem; }
 
 .ltn-gutters_xx-small .ltn-col {
   padding-right: 0.25rem;
-  padding-left: 0.25rem;
-}
+  padding-left: 0.25rem; }
 
 /**
  * @summary Apply 8px gutters to each grid column when you add this class to an `ltn-grid` element
@@ -189,13 +168,11 @@
  */
 .ltn-gutters_x-small {
   margin-right: -0.5rem;
-  margin-left: -0.5rem;
-}
+  margin-left: -0.5rem; }
 
 .ltn-gutters_x-small .ltn-col {
   padding-right: 0.5rem;
-  padding-left: 0.5rem;
-}
+  padding-left: 0.5rem; }
 
 /**
  * @summary Apply 12px gutters to each grid column when you add this class to an `ltn-grid` element
@@ -204,13 +181,11 @@
  */
 .ltn-gutters_small {
   margin-right: -0.75rem;
-  margin-left: -0.75rem;
-}
+  margin-left: -0.75rem; }
 
 .ltn-gutters_small .ltn-col {
   padding-right: 0.75rem;
-  padding-left: 0.75rem;
-}
+  padding-left: 0.75rem; }
 
 /**
  * @summary Apply 16px gutters to each grid column when you add this class to an `ltn-grid` element
@@ -219,13 +194,11 @@
  */
 .ltn-gutters_medium {
   margin-right: -1rem;
-  margin-left: -1rem;
-}
+  margin-left: -1rem; }
 
 .ltn-gutters_medium .ltn-col {
   padding-right: 1rem;
-  padding-left: 1rem;
-}
+  padding-left: 1rem; }
 
 /**
  * @summary Apply 24px gutters to each grid column when you add this class to an `ltn-grid` element
@@ -234,13 +207,11 @@
  */
 .ltn-gutters_large {
   margin-right: -1.5rem;
-  margin-left: -1.5rem;
-}
+  margin-left: -1.5rem; }
 
 .ltn-gutters_large .ltn-col {
   padding-right: 1.5rem;
-  padding-left: 1.5rem;
-}
+  padding-left: 1.5rem; }
 
 /**
  * @summary Apply 32px gutters to each grid column when you add this class to an `ltn-grid` element
@@ -249,13 +220,11 @@
  */
 .ltn-gutters_x-large {
   margin-right: -2rem;
-  margin-left: -2rem;
-}
+  margin-left: -2rem; }
 
 .ltn-gutters_x-large .ltn-col {
   padding-right: 2rem;
-  padding-left: 2rem;
-}
+  padding-left: 2rem; }
 
 /**
  * @summary Apply 48px gutters to each grid column when you add this class to an `ltn-grid` element
@@ -264,13 +233,11 @@
  */
 .ltn-gutters_xx-large {
   margin-right: -3rem;
-  margin-left: -3rem;
-}
+  margin-left: -3rem; }
 
 .ltn-gutters_xx-large .ltn-col {
   padding-right: 3rem;
-  padding-left: 3rem;
-}
+  padding-left: 3rem; }
 
 /**
  * @summary Apply 12px gutters to only direct column children when you add this class to an `ltn-grid` element
@@ -279,13 +246,11 @@
  */
 .ltn-gutters_direct {
   margin-right: -0.75rem;
-  margin-left: -0.75rem;
-}
+  margin-left: -0.75rem; }
 
 .ltn-gutters_direct > .ltn-col {
   padding-right: 0.75rem;
-  padding-left: 0.75rem;
-}
+  padding-left: 0.75rem; }
 
 /**
  * @summary Apply 2px gutters to only direct column children when you add this class to an `ltn-grid` element
@@ -294,13 +259,11 @@
  */
 .ltn-gutters_direct-xxx-small {
   margin-right: -0.125rem;
-  margin-left: -0.125rem;
-}
+  margin-left: -0.125rem; }
 
 .ltn-gutters_direct-xxx-small > .ltn-col {
   padding-right: 0.125rem;
-  padding-left: 0.125rem;
-}
+  padding-left: 0.125rem; }
 
 /**
  * @summary Apply 4px gutters to only direct column children when you add this class to an `ltn-grid` element
@@ -309,13 +272,11 @@
  */
 .ltn-gutters_direct-xx-small {
   margin-right: -0.25rem;
-  margin-left: -0.25rem;
-}
+  margin-left: -0.25rem; }
 
 .ltn-gutters_direct-xx-small > .ltn-col {
   padding-right: 0.25rem;
-  padding-left: 0.25rem;
-}
+  padding-left: 0.25rem; }
 
 /**
  * @summary Apply 8px gutters to only direct column children when you add this class to an `ltn-grid` element
@@ -324,13 +285,11 @@
  */
 .ltn-gutters_direct-x-small {
   margin-right: -0.5rem;
-  margin-left: -0.5rem;
-}
+  margin-left: -0.5rem; }
 
 .ltn-gutters_direct-x-small > .ltn-col {
   padding-right: 0.5rem;
-  padding-left: 0.5rem;
-}
+  padding-left: 0.5rem; }
 
 /**
  * @summary Apply 12px gutters to only direct column children when you add this class to an `ltn-grid` element
@@ -339,13 +298,11 @@
  */
 .ltn-gutters_direct-small {
   margin-right: -0.75rem;
-  margin-left: -0.75rem;
-}
+  margin-left: -0.75rem; }
 
 .ltn-gutters_direct-small > .ltn-col {
   padding-right: 0.75rem;
-  padding-left: 0.75rem;
-}
+  padding-left: 0.75rem; }
 
 /**
  * @summary Apply 16px gutters to only direct column children when you add this class to an `ltn-grid` element
@@ -354,13 +311,11 @@
  */
 .ltn-gutters_direct-medium {
   margin-right: -1rem;
-  margin-left: -1rem;
-}
+  margin-left: -1rem; }
 
 .ltn-gutters_direct-medium > .ltn-col {
   padding-right: 1rem;
-  padding-left: 1rem;
-}
+  padding-left: 1rem; }
 
 /**
  * @summary Apply 24px gutters to only direct column children when you add this class to an `ltn-grid` element
@@ -369,13 +324,11 @@
  */
 .ltn-gutters_direct-large {
   margin-right: -1.5rem;
-  margin-left: -1.5rem;
-}
+  margin-left: -1.5rem; }
 
 .ltn-gutters_direct-large > .ltn-col {
   padding-right: 1.5rem;
-  padding-left: 1.5rem;
-}
+  padding-left: 1.5rem; }
 
 /**
  * @summary Apply 32px gutters to only direct column children when you add this class to an `ltn-grid` element
@@ -384,13 +337,11 @@
  */
 .ltn-gutters_direct-x-large {
   margin-right: -2rem;
-  margin-left: -2rem;
-}
+  margin-left: -2rem; }
 
 .ltn-gutters_direct-x-large > .ltn-col {
   padding-right: 2rem;
-  padding-left: 2rem;
-}
+  padding-left: 2rem; }
 
 /**
  * @summary Apply 48px gutters to only direct column children when you add this class to an `ltn-grid` element
@@ -399,13 +350,11 @@
  */
 .ltn-gutters_direct-xx-large {
   margin-right: -3rem;
-  margin-left: -3rem;
-}
+  margin-left: -3rem; }
 
 .ltn-gutters_direct-xx-large > .ltn-col {
   padding-right: 3rem;
-  padding-left: 3rem;
-}
+  padding-left: 3rem; }
 
 /**
  * @summary Normalizes the 0.75rem of padding when nesting a grid in a region with `.ltn-p-horizontal_small`
@@ -416,8 +365,7 @@
 .ltn-grid_pull-padded,
 .ltn-grid--pull-padded {
   margin-right: -0.75rem;
-  margin-left: -0.75rem;
-}
+  margin-left: -0.75rem; }
 
 /**
  * @summary Normalizes the 0.125rem of padding when nesting a grid in a region with `.ltn-p-horizontal_xxx-small`
@@ -428,8 +376,7 @@
 .ltn-grid_pull-padded-xxx-small,
 .ltn-grid--pull-padded-xxx-small {
   margin-right: -0.125rem;
-  margin-left: -0.125rem;
-}
+  margin-left: -0.125rem; }
 
 /**
  * @summary Normalizes the 0.25rem of padding when nesting a grid in a region with `.ltn-p-horizontal_xx-small`
@@ -440,8 +387,7 @@
 .ltn-grid_pull-padded-xx-small,
 .ltn-grid--pull-padded-xx-small {
   margin-right: -0.25rem;
-  margin-left: -0.25rem;
-}
+  margin-left: -0.25rem; }
 
 /**
  * @summary Normalizes the 0.5rem of padding when nesting a grid in a region with `.ltn-p-horizontal_x-small`
@@ -452,8 +398,7 @@
 .ltn-grid_pull-padded-x-small,
 .ltn-grid--pull-padded-x-small {
   margin-right: -0.5rem;
-  margin-left: -0.5rem;
-}
+  margin-left: -0.5rem; }
 
 /**
  * @summary Normalizes the 0.75rem of padding when nesting a grid in a region with `.ltn-p-horizontal_small`
@@ -464,8 +409,7 @@
 .ltn-grid_pull-padded-small,
 .ltn-grid--pull-padded-small {
   margin-right: -0.75rem;
-  margin-left: -0.75rem;
-}
+  margin-left: -0.75rem; }
 
 /**
  * @summary Normalizes the 1rem of padding when nesting a grid in a region with `.ltn-p-horizontal_medium`
@@ -476,8 +420,7 @@
 .ltn-grid_pull-padded-medium,
 .ltn-grid--pull-padded-medium {
   margin-right: -1rem;
-  margin-left: -1rem;
-}
+  margin-left: -1rem; }
 
 /**
  * @summary Normalizes the 1.5rem of padding when nesting a grid in a region with `.ltn-p-horizontal_large`
@@ -488,8 +431,7 @@
 .ltn-grid_pull-padded-large,
 .ltn-grid--pull-padded-large {
   margin-right: -1.5rem;
-  margin-left: -1.5rem;
-}
+  margin-left: -1.5rem; }
 
 /**
  * @summary Normalizes the 1.5rem of padding when nesting a grid in a region with `.ltn-p-horizontal_x-large`
@@ -500,8 +442,7 @@
 .ltn-grid_pull-padded-x-large,
 .ltn-grid--pull-padded-x-large {
   margin-right: -2rem;
-  margin-left: -2rem;
-}
+  margin-left: -2rem; }
 
 /**
  * @summary Normalizes the 1.5rem of padding when nesting a grid in a region with `.ltn-p-horizontal_xx-large`
@@ -512,8 +453,7 @@
 .ltn-grid_pull-padded-xx-large,
 .ltn-grid--pull-padded-xx-large {
   margin-right: -3rem;
-  margin-left: -3rem;
-}
+  margin-left: -3rem; }
 
 /**
  * @summary Initializes a grid column
@@ -525,8 +465,7 @@
 [class*="ltn-col_padded"],
 [class*="ltn-col--padded"] {
   -ms-flex: 1 1 auto;
-  flex: 1 1 auto;
-}
+      flex: 1 1 auto; }
 
 /**
  * @summary Adds border to top side of column
@@ -538,9 +477,7 @@
 @media (min-width: 64em) {
   .ltn-col_rule-top,
   .ltn-col--rule-top {
-    border-top: 1px solid #f3f2f2;
-  }
-}
+    border-top: 1px solid #f3f2f2; } }
 
 /**
  * @summary Adds border to right side of column
@@ -552,9 +489,7 @@
 @media (min-width: 64em) {
   .ltn-col_rule-right,
   .ltn-col--rule-right {
-    border-right: 1px solid #f3f2f2;
-  }
-}
+    border-right: 1px solid #f3f2f2; } }
 
 /**
  * @summary Adds border to bottom side of column
@@ -566,9 +501,7 @@
 @media (min-width: 64em) {
   .ltn-col_rule-bottom,
   .ltn-col--rule-bottom {
-    border-bottom: 1px solid #f3f2f2;
-  }
-}
+    border-bottom: 1px solid #f3f2f2; } }
 
 /**
  * @summary Adds border to left side of column
@@ -580,9 +513,7 @@
 @media (min-width: 64em) {
   .ltn-col_rule-left,
   .ltn-col--rule-left {
-    border-left: 1px solid #f3f2f2;
-  }
-}
+    border-left: 1px solid #f3f2f2; } }
 
 /**
  * @summary Needed when truncation is nested in a flexible container in a grid
@@ -592,9 +523,8 @@
  */
 .ltn-has-flexi-truncate {
   -ms-flex: 1 1 0%;
-  flex: 1 1 0%;
-  min-width: 0;
-}
+      flex: 1 1 0%;
+  min-width: 0; }
 
 /**
  * @summary Removes flexbox from grid column
@@ -604,8 +534,7 @@
  */
 .ltn-no-flex {
   -ms-flex: none;
-  flex: none;
-}
+      flex: none; }
 
 /**
  * @summary Sets the column to a min-width of 0
@@ -614,8 +543,7 @@
  * @modifier
  */
 .ltn-no-space {
-  min-width: 0;
-}
+  min-width: 0; }
 
 /**
  * @summary Allows column to grow to children&rsquo;s content
@@ -625,8 +553,7 @@
  */
 .ltn-grow {
   -ms-flex-positive: 1;
-  flex-grow: 1;
-}
+      flex-grow: 1; }
 
 /**
  * @summary Prevents column from growing to children&rsquo;s content
@@ -636,8 +563,7 @@
  */
 .ltn-grow-none {
   -ms-flex-positive: 0;
-  flex-grow: 0;
-}
+      flex-grow: 0; }
 
 /**
  * @summary Allows column to shrink to children's content
@@ -647,8 +573,7 @@
  */
 .ltn-shrink {
   -ms-flex-negative: 1;
-  flex-shrink: 1;
-}
+      flex-shrink: 1; }
 
 /**
  * @summary Prevents column from shrinking to children's content
@@ -658,13 +583,11 @@
  */
 .ltn-shrink-none {
   -ms-flex-negative: 0;
-  flex-shrink: 0;
-}
+      flex-shrink: 0; }
 
 .ltn-text-longform ul.ltn-grid {
   margin-left: 0;
-  list-style: none;
-}
+  list-style: none; }
 
 /**
  * @summary Columns align in the center to the main axis and expand in each direction
@@ -675,8 +598,7 @@
 .ltn-grid_align-center,
 .ltn-grid--align-center {
   -ms-flex-pack: center;
-  justify-content: center;
-}
+      justify-content: center; }
 
 .ltn-grid_align-center .ltn-col,
 .ltn-grid_align-center [class*="ltn-col_padded"],
@@ -685,8 +607,7 @@
 .ltn-grid--align-center [class*="ltn-col_padded"],
 .ltn-grid--align-center [class*="ltn-col--padded"] {
   -ms-flex-positive: 0;
-  flex-grow: 0;
-}
+      flex-grow: 0; }
 
 /**
  * @summary Columns are evenly distributed with equal space around them all
@@ -697,8 +618,7 @@
 .ltn-grid_align-space,
 .ltn-grid--align-space {
   -ms-flex-pack: distribute;
-  justify-content: space-around;
-}
+      justify-content: space-around; }
 
 .ltn-grid_align-space .ltn-col,
 .ltn-grid_align-space [class*="ltn-col_padded"],
@@ -707,8 +627,7 @@
 .ltn-grid--align-space [class*="ltn-col_padded"],
 .ltn-grid--align-space [class*="ltn-col--padded"] {
   -ms-flex-positive: 0;
-  flex-grow: 0;
-}
+      flex-grow: 0; }
 
 /**
  * @summary Columns align to the left and right followed by center. Space is equal between them
@@ -720,8 +639,7 @@
 .ltn-grid_align-spread,
 .ltn-grid--align-spread {
   -ms-flex-pack: justify;
-  justify-content: space-between;
-}
+      justify-content: space-between; }
 
 .ltn-grid_align-spread .ltn-col,
 .ltn-grid_align-spread [class*="ltn-col_padded"],
@@ -730,8 +648,7 @@
 .ltn-grid--align-spread [class*="ltn-col_padded"],
 .ltn-grid--align-spread [class*="ltn-col--padded"] {
   -ms-flex-positive: 0;
-  flex-grow: 0;
-}
+      flex-grow: 0; }
 
 /**
  * @summary Columns start on the opposite end of the grid's main axis
@@ -742,8 +659,7 @@
 .ltn-grid_align-end,
 .ltn-grid--align-end {
   -ms-flex-pack: end;
-  justify-content: flex-end;
-}
+      justify-content: flex-end; }
 
 .ltn-grid_align-end .ltn-col,
 .ltn-grid_align-end [class*="ltn-col_padded"],
@@ -752,8 +668,7 @@
 .ltn-grid--align-end [class*="ltn-col_padded"],
 .ltn-grid--align-end [class*="ltn-col--padded"] {
   -ms-flex-positive: 0;
-  flex-grow: 0;
-}
+      flex-grow: 0; }
 
 /**
  * @summary Columns start at the beginning of the grid's cross axis
@@ -764,10 +679,9 @@
 .ltn-grid_vertical-align-start,
 .ltn-grid--vertical-align-start {
   -ms-flex-align: start;
-  align-items: flex-start;
+      align-items: flex-start;
   -ms-flex-line-pack: start;
-  align-content: flex-start;
-}
+      align-content: flex-start; }
 
 /**
  * @summary Columns align in the center to the cross axis and expand it each direction
@@ -778,10 +692,9 @@
 .ltn-grid_vertical-align-center,
 .ltn-grid--vertical-align-center {
   -ms-flex-align: center;
-  align-items: center;
+      align-items: center;
   -ms-flex-line-pack: center;
-  align-content: center;
-}
+      align-content: center; }
 
 /**
  * @summary Columns start on the opposite end of the grid's cross axis
@@ -792,10 +705,9 @@
 .ltn-grid_vertical-align-end,
 .ltn-grid--vertical-align-end {
   -ms-flex-align: end;
-  align-items: flex-end;
+      align-items: flex-end;
   -ms-flex-line-pack: end;
-  align-content: flex-end;
-}
+      align-content: flex-end; }
 
 /**
  * @summary Vertically aligns element to top of `.ltn-grid`
@@ -806,8 +718,7 @@
 .ltn-align-top {
   vertical-align: top;
   -ms-flex-item-align: start;
-  align-self: flex-start;
-}
+      align-self: flex-start; }
 
 /**
  * @summary Vertically aligns element to middle of `.ltn-grid`
@@ -818,9 +729,8 @@
 .ltn-align-middle {
   vertical-align: middle;
   -ms-flex-item-align: center;
-  -ms-grid-row-align: center;
-  align-self: center;
-}
+      -ms-grid-row-align: center;
+      align-self: center; }
 
 /**
  * @summary Vertically aligns element to bottom of `.ltn-grid`
@@ -831,8 +741,7 @@
 .ltn-align-bottom {
   vertical-align: bottom;
   -ms-flex-item-align: end;
-  align-self: flex-end;
-}
+      align-self: flex-end; }
 
 /**
  * @summary Bumps grid item(s) away from the other grid items to sit at the top, taking up the remaining white-space of the grid container
@@ -842,8 +751,7 @@
  */
 .ltn-col_bump-top,
 .ltn-col--bump-top {
-  margin-top: auto;
-}
+  margin-top: auto; }
 
 /**
  * @summary Bumps grid item(s) away from the other grid items to sit to the right, taking up the remaining white-space of the grid container
@@ -853,8 +761,7 @@
  */
 .ltn-col_bump-right,
 .ltn-col--bump-right {
-  margin-right: auto;
-}
+  margin-right: auto; }
 
 /**
  * @summary Bumps grid item(s) away from the other grid items to sit at the bottom, taking up the remaining white-space of the grid container
@@ -864,8 +771,7 @@
  */
 .ltn-col_bump-bottom,
 .ltn-col--bump-bottom {
-  margin-bottom: auto;
-}
+  margin-bottom: auto; }
 
 /**
  * @summary Bumps grid item(s) away from the other grid items to sit to the left, taking up the remaining white-space of the grid container
@@ -875,8 +781,7 @@
  */
 .ltn-col_bump-left,
 .ltn-col--bump-left {
-  margin-left: auto;
-}
+  margin-left: auto; }
 
 /**
  * @summary Stretch the grid items for both single row and multi-line rows to fill the height of the parent grid container
@@ -888,10 +793,9 @@
 .ltn-grid_vertical-stretch,
 .ltn-grid--vertical-stretch {
   -ms-flex-align: stretch;
-  align-items: stretch;
+      align-items: stretch;
   -ms-flex-line-pack: stretch;
-  align-content: stretch;
-}
+      align-content: stretch; }
 
 /**
  * @summary Restrict width of containers to a maximum of 480px
@@ -901,8 +805,7 @@
  */
 .ltn-container_small,
 .ltn-container--small {
-  max-width: 30rem;
-}
+  max-width: 30rem; }
 
 /**
  * @summary Restrict width of containers to a maximum of 768px
@@ -912,8 +815,7 @@
  */
 .ltn-container_medium,
 .ltn-container--medium {
-  max-width: 48rem;
-}
+  max-width: 48rem; }
 
 /**
  * @summary Restrict width of containers to a maximum of 1024px
@@ -923,8 +825,7 @@
  */
 .ltn-container_large,
 .ltn-container--large {
-  max-width: 64rem;
-}
+  max-width: 64rem; }
 
 /**
  * @summary Restrict width of containers to a maximum of 1280px
@@ -934,8 +835,7 @@
  */
 .ltn-container_x-large,
 .ltn-container--x-large {
-  max-width: 80rem;
-}
+  max-width: 80rem; }
 
 /**
  * @summary Width of container takes up 100% of viewport
@@ -945,8 +845,7 @@
  */
 .ltn-container_fluid,
 .ltn-container--fluid {
-  width: 100%;
-}
+  width: 100%; }
 
 /**
  * @summary Horizontally positions containers in the center of the viewport
@@ -957,8 +856,7 @@
 .ltn-container_center,
 .ltn-container--center {
   margin-left: auto;
-  margin-right: auto;
-}
+  margin-right: auto; }
 
 /**
  * @summary Horizontally positions containers to the left of the viewport
@@ -968,8 +866,7 @@
  */
 .ltn-container_left,
 .ltn-container--left {
-  margin-right: auto;
-}
+  margin-right: auto; }
 
 /**
  * @summary Horizontally positions containers to the right of the viewport
@@ -979,19 +876,14 @@
  */
 .ltn-container_right,
 .ltn-container--right {
-  margin-left: auto;
-}
+  margin-left: auto; }
 
 .ltn-grid_overflow,
 .ltn-grid--overflow {
   -ms-flex-flow: row nowrap;
-  flex-flow: row nowrap;
-}
+      flex-flow: row nowrap; }
 
 .ltn-grid_overflow .ltn-col,
 .ltn-grid--overflow .ltn-col {
   min-width: 11.25em;
-  max-width: 22.5em;
-}
-
-/*# sourceMappingURL=global.css.map */
+  max-width: 22.5em; }
