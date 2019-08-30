@@ -40,4 +40,21 @@
   width: 200px;
 }
 
+#donate {
+  background-image: url("../images/donate--background-image.png");
+  background-color: #5B3E22;
+}
+
+h3 {
+  font-family: TrendSansOne;
+  font-size: 3rem;
+  color: #FFFFFF;
+  letter-spacing: -6.82px;
+  text-align: center;
+  text-shadow: 0 4px 0 #010D14;
+  line-height: 3rem;
+  margin: 0 auto;
+  padding: 0;
+}
+
 /*# sourceMappingURL=index.css.map */

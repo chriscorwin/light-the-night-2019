@@ -38,13 +38,19 @@
 
 
 	<div id="walk">
-		<h3><%- localization.content.indexH3 %></h3>
+		<h3><%- localization.content.walkHeading %></h3>
 
 		<%- include(`includes/${locals.urlSlug}/${locals.urlSlug}-contents-walk-table`) _%>
 	</div>
 
 	<div id="donate">
-		<h3><%- localization.content.indexH3 %></h3>
+		<h3><%- localization.content.donateHeading %></h3>
+
+		<%- include(`includes/${locals.urlSlug}/${locals.urlSlug}-contents-donate`) _%>
+	</div>
+
+	<div id="learn">
+		<h3><%- localization.content.learnHeading %></h3>
 
 		<%- include(`includes/${locals.urlSlug}/${locals.urlSlug}-contents-donate`) _%>
 	</div>

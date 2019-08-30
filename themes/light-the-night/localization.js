@@ -2,7 +2,9 @@ module.exports = {
 	content: {
 		indexH1: 'Light the Night',
 		indexH2: 'When we walk, cancer runs.',
-		indexH3: 'Find a Salesforce Walk',
+		walkHeading: 'Find a Salesforce Walk',
+		donateHeading: 'Fundraising Progress',
+		learnHeading: 'About Light the Night',
 	},
 	contestTableRowCellsToShow: [
 		9, 8, 7, 6
