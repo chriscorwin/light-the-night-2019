@@ -18,17 +18,7 @@ module.exports = function() {
     const defaultConfigData = require('./config.json');
 
     let envConfigData = {};
-    // obtain env specific config
-	if(process.env.NODE_ENV && process.env.NODE_ENV !== 'production') {
-
-        try {
-            envConfigData = require(`./config.overrides.${process.env.NODE_ENV}.json`) || {};
-        }
-        catch(error) {
-          console.error(error);
-        }
-
-    }
+   
 
 
     if (process.env.DEBUG === "true") {
@@ -47,29 +37,16 @@ module.exports = function() {
         console.warn('no default engine config');
     }
 
-    let defaultthemeConfig = {};
+    let defaultThemeConfig = {};
     try {
-        defaultthemeConfig = configData.theme ? require(`../themes/${configData.theme}/default-config.js`) : {};
+        defaultThemeConfig = configData.theme ? require(`../themes/${configData.theme}/localization.js`) : {};
     } catch (e) {
         console.warn('no default product template config');
     }
 
-    let demoOverrideConfig = {};
-    try {
-        demoOverrideConfig = configData.demoVenue && configData.theme ? require(`../demo-overrides/${configData.theme}/${configData.demoVenue}/localization.js`) : {};
-    } catch (e) {
-        console.warn('no demo overrides localization');
-    }
-
-    let brandThemeConfig = {};
-    try {
-        brandThemeConfig = configData.brandTheme ? require(`../brand-themes/${configData.brandTheme}/localization.js`) : {};
-    } catch (e) {
-        console.warn('no brand theme localization');
-    }
 
     const dates = require('../engine/javascripts/dates');
-    configData.localization = Object.assign({}, { dates }, defaultEngineConfig, defaultthemeConfig, demoOverrideConfig, brandThemeConfig);
+    configData.localization = Object.assign({}, { dates }, defaultEngineConfig, defaultThemeConfig);
 
     // view engine setup
     // https://expressjs.com/en/4x/api.html#app.set

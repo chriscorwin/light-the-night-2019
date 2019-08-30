@@ -14,4 +14,30 @@
   height: 50%;
 }
 
+#sponsor-logos a.clickable-image img {
+  width: 25%;
+  height: 25%;
+}
+
+#contest-data-table {
+  margin: 0 auto;
+}
+
+#trophy-gold_wrapper {
+  margin: 0 auto;
+  width: 510px;
+}
+
+#trophy-gold_wrapper svg {
+  width: 100%;
+  height: auto;
+}
+
+#label-gold--state::before {
+  display: block;
+  content: 'HI THERE';
+  height: 200px;
+  width: 200px;
+}
+
 /*# sourceMappingURL=index.css.map */

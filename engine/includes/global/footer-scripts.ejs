@@ -1,6 +1,6 @@
 <!-- each page automatically tries to include a javascript file of the same name -->
-<% if (locals.siteSection) { %>
-<script src="/javascripts/<%=locals.siteSection%>.js"></script>
+<% if (locals.urlSlug) { %>
+<script src="/javascripts/<%=locals.urlSlug%>.js"></script>
 <% } %>
 <%
 

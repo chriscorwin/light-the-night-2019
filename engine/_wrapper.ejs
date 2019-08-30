@@ -6,7 +6,7 @@ Demuxe: including \`engine/_wrapper.ejs\` now...
 `);
 %>
 <!DOCTYPE html>
-<html class="<% echo(`${locals.urlSlug}-theme ${locals.urlSlug}-theme_v1`) %>">
+<html class="<% echo(`${locals.theme}-theme ${locals.theme}-theme_v1`) %>">
 	<head>
 		<%- include('includes/global/head') _%>
 		<% if (locals.siteSection) { %>
@@ -14,7 +14,7 @@ Demuxe: including \`engine/_wrapper.ejs\` now...
 		<% } %>
 	</head>
 
-	<body class="<% echo(`${locals.urlSlug}-theme ${locals.urlSlug}-theme_v1`) %>">
+	<body class="<% echo(`${locals.theme}-theme ${locals.theme}-theme_v1`) %>">
 
 		<% if (locals.urlSlug) { %>
 		<div id="content-wrapper"  class="<% echo(`container ${locals.urlSlug}_content-wrapper`) %>">

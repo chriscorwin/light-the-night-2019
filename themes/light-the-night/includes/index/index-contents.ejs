@@ -1,11 +1,8 @@
 <div class="ltn-container_x-large">
 
 
-	<h1>Light the night</h1>
-	<h2>When we walk, cancer runs.</h2>
-
-
-
+	<h1><%- localization.content.indexH1 %></h1>
+	<h2><%- localization.content.indexH2 %></h2>
 
 	<div id="sponsor-logos"  class="ltn-grid ltn-wrap">
 		<div class="ltn-col ltn-size_1-of-1 ltn-large-size_6-of-12">
@@ -41,9 +38,15 @@
 
 
 	<div id="walk">
-		<h3>Find a Salesforce Walk</h3>
+		<h3><%- localization.content.indexH3 %></h3>
 
 		<%- include(`includes/${locals.urlSlug}/${locals.urlSlug}-contents-walk-table`) _%>
+	</div>
+
+	<div id="donate">
+		<h3><%- localization.content.indexH3 %></h3>
+
+		<%- include(`includes/${locals.urlSlug}/${locals.urlSlug}-contents-donate`) _%>
 	</div>
 
 

@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="776" height="760" viewBox="0 0 776 760">
+  <defs>
+    <radialGradient id="trophy--gold-a" cx="50%" cy="50%" r="76.739%" fx="50%" fy="50%">
+      <stop offset="0%" stop-color="#BC8D60"/>
+      <stop offset="100%" stop-color="#FBF3C6" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="trophy--gold-d" x1="20.16%" x2="85.012%" y1="90.084%" y2="12.302%">
+      <stop offset="0%" stop-color="#E8BB66"/>
+      <stop offset="100%" stop-color="#EFD67B"/>
+    </linearGradient>
+    <circle id="trophy--gold-c" cx="255" cy="253" r="160"/>
+    <filter id="trophy--gold-b" width="126.9%" height="126.9%" x="-13.4%" y="-12.8%" filterUnits="objectBoundingBox">
+      <feMorphology in="SourceAlpha" operator="dilate" radius="6" result="shadowSpreadOuter1"/>
+      <feOffset dy="2" in="shadowSpreadOuter1" result="shadowOffsetOuter1"/>
+      <feGaussianBlur in="shadowOffsetOuter1" result="shadowBlurOuter1" stdDeviation="12"/>
+      <feComposite in="shadowBlurOuter1" in2="SourceAlpha" operator="out" result="shadowBlurOuter1"/>
+      <feColorMatrix in="shadowBlurOuter1" values="0 0 0 0 0.42745098   0 0 0 0 0.31372549   0 0 0 0 0.309803922  0 0 0 1 0"/>
+    </filter>
+  </defs>
+  <g fill="none" fill-rule="evenodd" transform="translate(136 114)">
+    <path stroke="url(#trophy--gold-a)" stroke-dasharray="103 120" stroke-width="341" d="M255,510 C395.832611,510 510,395.832611 510,255 C510,114.167389 395.832611,0 255,0 C114.167389,0 0,114.167389 0,255 C0,395.832611 114.167389,510 255,510 Z"/>
+    <use fill="#000" filter="url(#trophy--gold-b)" xlink:href="#trophy--gold-c"/>
+    <use fill="#FBF3C6" stroke="url(#trophy--gold-d)" stroke-width="12" xlink:href="#trophy--gold-c"/>
+    <g transform="translate(38 147)">
+      <text fill="#010D14" font-family="RobotoSlab-Light, Roboto Slab" font-size="29" font-weight="300" letter-spacing="-1.365">
+        <tspan x="152.381" y="30">First Place</tspan>
+      </text>
+      <polygon fill="#032F4C" points="0 193 98 193 98 258 0 258 30 225.5"/>
+      <polygon fill="#032F4C" points="337 193 435 193 435 258 337 258 367 225.5" transform="matrix(-1 0 0 1 772 0)"/>
+      <polygon fill="#010D14" points="337 193 374 179 374 244 337 258"/>
+      <polygon fill="#010D14" points="61 193 98 179 98 244 61 258" transform="matrix(-1 0 0 1 159 0)"/>
+      <rect width="313" height="65" x="61" y="179" fill="#032F4C"/>
+      <text fill="#FFFFF3" font-family="TrendSansOne, Trend Sans" font-size="38" font-weight="300" letter-spacing="-3">
+        <tspan x="108.126" y="225">$38,221.00</tspan>
+      </text>
+    </g>
+    <polyline stroke="#034B83" stroke-width="2" points="473 339 412 339 412 325 99 325 99 339 38 339"/>
+    <polyline stroke="#010D14" stroke-width="2" points="38 406 136 406 136 392 375 392 375 406 473 406"/>
+    <text id="label-gold--state" fill="#010D14" font-family="TrendSansOne, Trend Sans" font-size="24" font-weight="300" letter-spacing="-1.129">
+      <tspan x="194.438" y="289">Virginia</tspan>
+    </text>
+    <text  id="label-gold--city" fill="#010D14" font-family="TrendSansOne, Trend Sans" font-size="60" font-weight="300" letter-spacing="-2.824">
+      <tspan x="123.211" y="259">Reston</tspan>
+    </text>
+  </g>
+</svg>
