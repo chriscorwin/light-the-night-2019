@@ -3,3 +3,26 @@
 		width: 10rem;
 	}
 }
+
+
+#CTA-buttons, #sponsor-logos {
+
+	a {
+		display: block;
+		cursor: pointer;
+	
+		&.clickable-image {
+
+			img {
+				display: block;
+				margin: 0 auto;
+				width: 50%;
+				height: 50%;
+
+			}
+		}
+
+	}
+}
+
+

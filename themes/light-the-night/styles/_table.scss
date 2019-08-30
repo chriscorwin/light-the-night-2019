@@ -1,0 +1,1124 @@
+
+/**
+ * @summary Initializes data table
+ *
+ * @name base
+ * @selector .ltn-table
+ * @restrict table
+ * @support dev-ready
+ * @variant
+ */
+.ltn-table {
+  background-color: #033F6C;
+  font-size: inherit;
+  /**
+   * Default Table Row Hover
+   *
+   * @selector .ltn-no-row-hover
+   * @restrict .ltn-table
+   * @modifier
+   */
+  /**
+   * Selected Table Row + Hover
+   *
+   * @selector .ltn-is-selected
+   * @restrict .ltn-table tr
+   * @modifier
+   */
+  /**
+   * By default, nowrap is applied
+   *
+   * @selector .ltn-cell-wrap
+   * @restrict .ltn-table th, .ltn-table td
+   * @modifier
+   */
+  /**
+   * Use to add a left padding buffer to cells
+   *
+   * @selector .ltn-cell-buffer_left
+   * @restrict .ltn-table th, .ltn-table td
+   * @modifier
+   */
+  /**
+   * Use to add a right padding buffer to cells
+   *
+   * @selector .ltn-cell-buffer_right
+   * @restrict .ltn-table th, .ltn-table td
+   * @modifier
+   */
+  /**
+   * Focus state on a cell
+   *
+   * @selector .ltn-has-focus
+   * @restrict .ltn-table th, .ltn-table td
+   * @modifier
+   */ }
+
+.ltn-table th,
+.ltn-table td {
+  padding: 0.25rem 0.5rem;
+  white-space: nowrap;
+  position: relative; }
+
+.ltn-table th {
+  font-weight: 400; }
+
+.ltn-table th:focus {
+  outline: 0; }
+
+.ltn-table thead th {
+  background-color: #fafaf9;
+  color: #514f4d;
+  padding: 0.25rem 0.5rem;
+  font-weight: 700;
+  line-height: normal; }
+
+.ltn-table:not(.ltn-no-row-hover) tbody tr:hover,
+.ltn-table:not(.ltn-no-row-hover) tbody tr:focus {
+  outline: 0; }
+
+.ltn-table:not(.ltn-no-row-hover) tbody tr:hover > td,
+.ltn-table:not(.ltn-no-row-hover) tbody tr:hover > th,
+.ltn-table:not(.ltn-no-row-hover) tbody tr:focus > td,
+.ltn-table:not(.ltn-no-row-hover) tbody tr:focus > th {
+  background-color: #2B83C8; }
+
+.ltn-table tbody tr.ltn-is-selected > td,
+.ltn-table tbody tr.ltn-is-selected > th,
+.ltn-table:not(.ltn-no-row-hover) tr.ltn-is-selected:hover > td,
+.ltn-table:not(.ltn-no-row-hover) tr.ltn-is-selected:hover > th {
+  background-color: #ecebea; }
+
+.ltn-table tbody tr.ltn-is-selected a,
+.ltn-table:not(.ltn-no-row-hover) tr.ltn-is-selected:hover a {
+  color: #00396b; }
+
+.ltn-table .ltn-cell-wrap {
+  white-space: normal;
+  overflow-wrap: break-word;
+  word-wrap: break-word; }
+
+.ltn-table .ltn-cell-shrink {
+  width: 1%; }
+
+.ltn-table .ltn-cell-buffer_left,
+.ltn-table .ltn-cell-buffer--left {
+  padding-left: 1.5rem; }
+
+.ltn-table .ltn-cell-buffer_right,
+.ltn-table .ltn-cell-buffer--right {
+  padding-right: 1.5rem; }
+
+.ltn-table tbody tr {
+  counter-increment: row-number; }
+
+.ltn-table .ltn-row-number:after {
+  content: counter(row-number); }
+
+.ltn-table th:focus,
+.ltn-table [role="gridcell"]:focus {
+  outline: 0; }
+
+.ltn-table th:focus,
+.ltn-table th.ltn-has-focus,
+.ltn-table [role="gridcell"]:focus,
+.ltn-table [role="gridcell"].ltn-has-focus {
+  box-shadow: #0070d2 0 0 0 1px inset; }
+
+.ltn-table th:active,
+.ltn-table [role="gridcell"]:active {
+  box-shadow: none; }
+
+.ltn-table .ltn-radio [type='radio'] + .ltn-radio__label .ltn-radio_faux {
+  margin-right: 0; }
+
+/**
+ * Add left and right padding to the first and last cells of a table
+ *
+ * @selector .ltn-table_cell-buffer
+ * @restrict .ltn-table
+ * @required
+ * @modifier
+ */
+.ltn-table_cell-buffer tr > th:first-child,
+.ltn-table_cell-buffer tr > td:first-child,
+.ltn-table--cell-buffer tr > th:first-child,
+.ltn-table--cell-buffer tr > td:first-child {
+  padding-left: 1.5rem; }
+
+.ltn-table_cell-buffer tr > th:last-child,
+.ltn-table_cell-buffer tr > td:last-child,
+.ltn-table--cell-buffer tr > th:last-child,
+.ltn-table--cell-buffer tr > td:last-child {
+  padding-right: 1.5rem; }
+
+/**
+ * Add vertical borders to a table
+ *
+ * @selector .ltn-table_bordered
+ * @restrict .ltn-table
+ * @modifier
+ */
+.ltn-table_bordered,
+.ltn-table--bordered {
+  border-collapse: separate;
+  border-top: 1px solid #dddbda;
+  border-bottom: 1px solid #dddbda; }
+
+.ltn-table_bordered thead > tr + tr > th,
+.ltn-table--bordered thead > tr + tr > th {
+  border-top: 1px solid #dddbda; }
+
+.ltn-table_bordered tbody td,
+.ltn-table_bordered tbody th,
+.ltn-table--bordered tbody td,
+.ltn-table--bordered tbody th {
+  border-top: 1px solid #dddbda; }
+
+.ltn-table_bordered:not(.ltn-no-row-hover) tbody tr:hover > td:not(.ltn-is-selected),
+.ltn-table_bordered:not(.ltn-no-row-hover) tbody tr:hover > th:not(.ltn-is-selected),
+.ltn-table_bordered:not(.ltn-no-row-hover) tbody tr:focus > td:not(.ltn-is-selected),
+.ltn-table_bordered:not(.ltn-no-row-hover) tbody tr:focus > th:not(.ltn-is-selected),
+.ltn-table--bordered:not(.ltn-no-row-hover) tbody tr:hover > td:not(.ltn-is-selected),
+.ltn-table--bordered:not(.ltn-no-row-hover) tbody tr:hover > th:not(.ltn-is-selected),
+.ltn-table--bordered:not(.ltn-no-row-hover) tbody tr:focus > td:not(.ltn-is-selected),
+.ltn-table--bordered:not(.ltn-no-row-hover) tbody tr:focus > th:not(.ltn-is-selected) {
+  box-shadow: #dddbda 0 -1px 0 inset, #dddbda 0 1px 0 inset; }
+
+/**
+ * Add column borders
+ *
+ * @selector .ltn-table_col-bordered
+ * @restrict .ltn-table
+ * @modifier
+ */
+.ltn-table_col-bordered td + td,
+.ltn-table_col-bordered th + th,
+.ltn-table_col-bordered th + td,
+.ltn-table_col-bordered td + th,
+.ltn-table--col-bordered td + td,
+.ltn-table--col-bordered th + th,
+.ltn-table--col-bordered th + td,
+.ltn-table--col-bordered td + th {
+  border-left: 1px solid #dddbda; }
+
+/**
+ * Add alternating strips to rows
+ *
+ * @selector .ltn-table_striped
+ * @restrict .ltn-table
+ * @modifier
+ */
+.ltn-table_striped tbody tr:nth-of-type(even) > td,
+.ltn-table_striped tbody tr:nth-of-type(even) > th,
+.ltn-table--striped tbody tr:nth-of-type(even) > td,
+.ltn-table--striped tbody tr:nth-of-type(even) > th {
+  background-color: #2B83C8; }
+
+/**
+ * @summary Set table to use fixed layout for width and truncation purposes
+ *
+ * @name advanced
+ * @selector .ltn-table_fixed-layout
+ * @restrict .ltn-table
+ * @support dev-ready
+ * @variant
+ */
+.ltn-table_fixed-layout,
+.ltn-table--fixed-layout {
+  table-layout: fixed;
+  width: 100%;
+  white-space: nowrap; }
+
+.ltn-table_fixed-layout thead,
+.ltn-table--fixed-layout thead {
+  background-color: white; }
+
+.ltn-table_fixed-layout tbody,
+.ltn-table--fixed-layout tbody {
+  transform: translateZ(0); }
+
+.ltn-table_fixed-layout .ltn-cell-shrink,
+.ltn-table--fixed-layout .ltn-cell-shrink {
+  width: 3rem; }
+
+.ltn-table_fixed-layout .ltn-cell-shrink:nth-child(n),
+.ltn-table--fixed-layout .ltn-cell-shrink:nth-child(n) {
+  padding-left: 0;
+  padding-right: 0; }
+
+.ltn-table_fixed-layout .ltn-cell-shrink:first-child,
+.ltn-table--fixed-layout .ltn-cell-shrink:first-child {
+  text-align: right;
+  padding-right: 0.5rem; }
+
+.ltn-table_fixed-layout .ltn-cell-shrink:last-child,
+.ltn-table--fixed-layout .ltn-cell-shrink:last-child {
+  text-align: left;
+  padding-left: 0.5rem; }
+
+/**
+ * If the column is sortable, then let's handle the actionable
+ * region of the `<th>` cell
+ *
+ * @selector .ltn-is-sortable
+ * @restrict .ltn-table_fixed-layout th
+ */
+.ltn-is-sortable .ltn-th__action:hover,
+.ltn-is-sortable .ltn-th__action:focus,
+.ltn-is-sortable.ltn-has-focus .ltn-th__action,
+.ltn-is-sortable.ltn-has-focus .ltn-th__action:hover,
+.ltn-is-sortable.ltn-has-focus .ltn-th__action:focus {
+  background-color: white;
+  color: currentColor; }
+
+.ltn-is-sortable .ltn-th__action:hover .ltn-is-sortable__icon,
+.ltn-is-sortable .ltn-th__action:focus .ltn-is-sortable__icon,
+.ltn-is-sortable.ltn-has-focus .ltn-th__action .ltn-is-sortable__icon,
+.ltn-is-sortable.ltn-has-focus .ltn-th__action:hover .ltn-is-sortable__icon,
+.ltn-is-sortable.ltn-has-focus .ltn-th__action:focus .ltn-is-sortable__icon {
+  display: inline-block;
+  fill: #0070d2; }
+
+/**
+ * Actionable area inside th
+ *
+ * @selector .ltn-th__action
+ * @restrict .ltn-table th div, .ltn-table th a
+ */
+.ltn-th__action {
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0.25rem 0.5rem;
+  height: 2rem;
+  -ms-flex-align: center;
+      align-items: center;
+  /**
+   * Allows for alignment of form element, such as a checkbox
+   *
+   * @selector .ltn-th__action_form
+   * @restrict .ltn-th__action
+   */
+  /**
+   * Allows for alignment of button, such as a menu
+   *
+   * @selector .ltn-th__action-button
+   * @restrict .ltn-has-button-menu .ltn-button_icon
+   */ }
+
+.ltn-th__action:focus, .ltn-th__action:hover {
+  outline: 0;
+  background-color: white; }
+
+.ltn-th__action_form, .ltn-th__action--form {
+  display: -ms-inline-flexbox;
+  display: inline-flex; }
+
+.ltn-th__action-button {
+  position: absolute;
+  top: 50%;
+  right: 0.25rem;
+  transform: translateY(-50%); }
+
+/**
+ * If the column header has a menu button, then let's add right padding to the
+ * header to preserve truncation
+ *
+ * @selector .ltn-has-button-menu
+ * @restrict .ltn-table_fixed-layout th
+ */
+.ltn-has-button-menu .ltn-th__action {
+  padding-right: 1.5rem; }
+
+/**
+ * Icon inside sortable th
+ *
+ * @selector .ltn-is-sortable__icon
+ * @restrict .ltn-is-sortable .ltn-icon
+ */
+.ltn-is-sortable__icon {
+  width: 0.75rem;
+  height: 0.75rem;
+  margin-left: 0.25rem;
+  display: none; }
+
+/**
+ * Active state of sorted column
+ *
+ * @selector .ltn-is-sorted
+ * @restrict .ltn-table_fixed-layout th
+ */
+.ltn-is-sorted {
+  /**
+   * Change direction of arrow
+   *
+   * @name sorted-ascending
+   * @selector .ltn-is-sorted_asc
+   * @restrict .ltn-is-sorted
+   * @modifier
+   */ }
+
+.ltn-is-sorted .ltn-is-sortable__icon {
+  display: inline-block; }
+
+.ltn-is-sorted_asc .ltn-is-sortable__icon,
+.ltn-is-sorted--asc .ltn-is-sortable__icon {
+  transform: rotate(180deg); }
+
+.ltn-table_column-1-wrap tbody tr > *:nth-child(1) .ltn-truncate {
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  -webkit-hyphens: none;
+      -ms-hyphens: none;
+          hyphens: none;
+  white-space: normal; }
+
+.ltn-table_column-2-wrap tbody tr > *:nth-child(2) .ltn-truncate {
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  -webkit-hyphens: none;
+      -ms-hyphens: none;
+          hyphens: none;
+  white-space: normal; }
+
+.ltn-table_column-3-wrap tbody tr > *:nth-child(3) .ltn-truncate {
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  -webkit-hyphens: none;
+      -ms-hyphens: none;
+          hyphens: none;
+  white-space: normal; }
+
+.ltn-table_column-4-wrap tbody tr > *:nth-child(4) .ltn-truncate {
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  -webkit-hyphens: none;
+      -ms-hyphens: none;
+          hyphens: none;
+  white-space: normal; }
+
+.ltn-table_column-5-wrap tbody tr > *:nth-child(5) .ltn-truncate {
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  -webkit-hyphens: none;
+      -ms-hyphens: none;
+          hyphens: none;
+  white-space: normal; }
+
+.ltn-table_column-6-wrap tbody tr > *:nth-child(6) .ltn-truncate {
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  -webkit-hyphens: none;
+      -ms-hyphens: none;
+          hyphens: none;
+  white-space: normal; }
+
+.ltn-table_column-7-wrap tbody tr > *:nth-child(7) .ltn-truncate {
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  -webkit-hyphens: none;
+      -ms-hyphens: none;
+          hyphens: none;
+  white-space: normal; }
+
+.ltn-table_column-8-wrap tbody tr > *:nth-child(8) .ltn-truncate {
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  -webkit-hyphens: none;
+      -ms-hyphens: none;
+          hyphens: none;
+  white-space: normal; }
+
+.ltn-table_column-9-wrap tbody tr > *:nth-child(9) .ltn-truncate {
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  -webkit-hyphens: none;
+      -ms-hyphens: none;
+          hyphens: none;
+  white-space: normal; }
+
+.ltn-table_column-10-wrap tbody tr > *:nth-child(10) .ltn-truncate {
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  -webkit-hyphens: none;
+      -ms-hyphens: none;
+          hyphens: none;
+  white-space: normal; }
+
+.ltn-table_column-11-wrap tbody tr > *:nth-child(11) .ltn-truncate {
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  -webkit-hyphens: none;
+      -ms-hyphens: none;
+          hyphens: none;
+  white-space: normal; }
+
+.ltn-table_column-12-wrap tbody tr > *:nth-child(12) .ltn-truncate {
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  -webkit-hyphens: none;
+      -ms-hyphens: none;
+          hyphens: none;
+  white-space: normal; }
+
+.ltn-table_column-13-wrap tbody tr > *:nth-child(13) .ltn-truncate {
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  -webkit-hyphens: none;
+      -ms-hyphens: none;
+          hyphens: none;
+  white-space: normal; }
+
+.ltn-table_column-14-wrap tbody tr > *:nth-child(14) .ltn-truncate {
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  -webkit-hyphens: none;
+      -ms-hyphens: none;
+          hyphens: none;
+  white-space: normal; }
+
+.ltn-table_column-15-wrap tbody tr > *:nth-child(15) .ltn-truncate {
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  -webkit-hyphens: none;
+      -ms-hyphens: none;
+          hyphens: none;
+  white-space: normal; }
+
+[class*="ltn-table_column-"] tr td .ltn-truncate {
+  overflow: hidden;
+  position: relative;
+  max-height: 3.25rem; }
+
+[class*="ltn-table_column-"] tr td .ltn-truncate:after {
+  content: '';
+  position: absolute;
+  top: 2.25rem;
+  bottom: 0;
+  right: 0;
+  width: 50%;
+  background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, white 69%); }
+
+[class*="ltn-table_column-"] tr:hover td .ltn-truncate:after {
+  background: linear-gradient(to right, rgba(250, 250, 249, 0) 0%, #fafaf9 69%); }
+
+/**
+ * Resizable data table columns
+ *
+ * @selector .ltn-table_resizable-cols
+ * @restrict .ltn-table_fixed-layout
+ */
+.ltn-table_resizable-cols thead th,
+.ltn-table--resizable-cols thead th {
+  padding: 0; }
+
+/**
+ * Provide an indicator that resizing is available
+ *
+ * @selector .ltn-is-resizable
+ * @restrict .ltn-table_resizable-cols th
+ */
+.ltn-is-resizable .ltn-th__action:hover,
+.ltn-is-resizable .ltn-th__action:focus {
+  box-shadow: #dddbda -0.25rem 0 0 inset; }
+
+/**
+ * Resizable handle
+ *
+ * @selector .ltn-resizable
+ * @restrict .ltn-is-resizable div
+ */
+.ltn-resizable {
+  max-width: 100%;
+  /**
+   * Grab handle to resize column
+   *
+   * @selector .ltn-resizable__handle
+   * @restrict .ltn-resizable span
+   */
+  /**
+   * Grab handle divider indicator when resizing column
+   *
+   * @selector .ltn-resizable__divider
+   * @restrict .ltn-resizable__handle span
+   */ }
+
+.ltn-resizable__handle {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 0.25rem;
+  height: 100%;
+  background: #0070d2;
+  display: block;
+  cursor: col-resize;
+  opacity: 0;
+  z-index: 5000; }
+
+.ltn-resizable__handle:hover, .ltn-resizable__handle:focus, .ltn-resizable__handle:active {
+  opacity: 1; }
+
+.ltn-resizable__divider {
+  position: absolute;
+  right: 0;
+  height: 100vh;
+  width: 1px;
+  background: #0070d2; }
+
+.ltn-resizable__input:focus ~ .ltn-resizable__handle {
+  opacity: 1; }
+
+/**
+ * @summary Use this class to join a table to a page-header
+ */
+.ltn-table_joined table,
+.ltn-table.ltn-has-top-magnet table {
+  border-radius: 0 0 0.25rem 0.25rem;
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.1); }
+
+.ltn-table_joined-wrapper {
+  padding: 1rem 1rem 0 1rem;
+  border-radius: 0.25rem;
+  background-clip: padding-box; }
+
+.ltn-table_joined-wrapper .ltn-table {
+  border-radius: 0 0 0.25rem 0.25rem;
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.1); }
+
+/**
+ * Responsive tables
+ *
+ * When a table exceeds the width of its container, one responsive option is to wrap the table in a `.ltn-scrollable_x` class so that the user can scroll horizontally. View the example small and medium form factor tabs to see the effect.
+ *
+ * When `.ltn-max-medium-table_stacked` is applied to the &ldquo;Grid&rdquo; table, we generate faux `<th>` labels using the `data-label` applied to each cell, and stack the cells instead of lining them up horizontally. This works up until the **medium form factor** breakpoint. After the breakpoint is triggered, the table will lay out horizontally as normal.
+ *
+ * When `.ltn-max-medium-table_stacked` is applied to the &ldquo;Grid&rdquo; table, we generate faux `<th>` labels using the `data-label` applied to each cell, and stack the cells instead of lining them up horizontally. This works up until the **medium form factor** breakpoint. After the breakpoint is triggered, the table will lay out horizontally as normal.
+ *
+ * @summary Creates stacked row with stacked cells
+ *
+ * @name responsive
+ * @selector .ltn-max-medium-table_stacked
+ * @restrict .ltn-table
+ * @support prototype
+ * @variant
+ * @layout responsive
+ */
+@media (max-width: 48em) {
+  .ltn-max-medium-table_stacked,
+  .ltn-max-medium-table--stacked {
+    border: 0; }
+  .ltn-max-medium-table_stacked thead,
+  .ltn-max-medium-table--stacked thead {
+    /* stylelint-disable declaration-no-important */
+    position: absolute !important;
+    margin: -1px !important;
+    border: 0 !important;
+    padding: 0 !important;
+    width: 1px !important;
+    height: 1px !important;
+    overflow: hidden !important;
+    clip: rect(0 0 0 0) !important;
+    /* stylelint-enable declaration-no-important */ }
+  .ltn-max-medium-table_stacked th,
+  .ltn-max-medium-table--stacked th {
+    border-top: 0; }
+  .ltn-max-medium-table_stacked tr,
+  .ltn-max-medium-table--stacked tr {
+    display: block;
+    border-top: 2px solid #dddbda; }
+  .ltn-max-medium-table_stacked th,
+  .ltn-max-medium-table_stacked td,
+  .ltn-max-medium-table--stacked th,
+  .ltn-max-medium-table--stacked td {
+    display: block;
+    padding: 0.75rem;
+    max-width: 100%;
+    width: 100%;
+    clear: both;
+    white-space: normal;
+    overflow: hidden;
+    text-align: left; }
+  .ltn-max-medium-table_stacked th.ltn-truncate,
+  .ltn-max-medium-table_stacked td.ltn-truncate,
+  .ltn-max-medium-table--stacked th.ltn-truncate,
+  .ltn-max-medium-table--stacked td.ltn-truncate {
+    max-width: 100%; }
+  .ltn-max-medium-table_stacked th:before,
+  .ltn-max-medium-table_stacked td:before,
+  .ltn-max-medium-table--stacked th:before,
+  .ltn-max-medium-table--stacked td:before {
+    font-size: 0.75rem;
+    line-height: 1.25;
+    color: #3e3e3c;
+    text-transform: uppercase;
+    letter-spacing: 0.0625rem;
+    display: block;
+    padding-bottom: 0.25rem;
+    content: attr(data-label); }
+  .ltn-max-medium-table_stacked tr > td:first-child,
+  .ltn-max-medium-table_stacked tr > td:last-child,
+  .ltn-max-medium-table--stacked tr > td:first-child,
+  .ltn-max-medium-table--stacked tr > td:last-child {
+    padding: 0.75rem; }
+  .ltn-max-medium-table_stacked:not(.ltn-no-row-hover) tbody tr:hover,
+  .ltn-max-medium-table--stacked:not(.ltn-no-row-hover) tbody tr:hover {
+    /* stylelint-disable declaration-no-important */
+    /* stylelint-enable declaration-no-important */ }
+  .ltn-max-medium-table_stacked:not(.ltn-no-row-hover) tbody tr:hover td,
+  .ltn-max-medium-table_stacked:not(.ltn-no-row-hover) tbody tr:hover th,
+  .ltn-max-medium-table--stacked:not(.ltn-no-row-hover) tbody tr:hover td,
+  .ltn-max-medium-table--stacked:not(.ltn-no-row-hover) tbody tr:hover th {
+    background-color: inherit !important;
+    box-shadow: none !important; }
+  .ltn-max-medium-table_stacked .ltn-is-interactive .ltn-button,
+  .ltn-max-medium-table--stacked .ltn-is-interactive .ltn-button {
+    visibility: visible; }
+  .ltn-max-medium-table_stacked .ltn-cell-shrink,
+  .ltn-max-medium-table--stacked .ltn-cell-shrink {
+    width: auto; } }
+
+@media (max-width: 48em) {
+  .ltn-max-medium-table_stacked td:before,
+  .ltn-max-medium-table_stacked th:before,
+  .ltn-max-medium-table--stacked td:before,
+  .ltn-max-medium-table--stacked th:before {
+    padding-bottom: 0.25rem; } }
+
+/**
+ * @summary Creates stacked rows with horizontal cells
+ *
+ * @selector .ltn-max-medium-table_stacked-horizontal
+ * @restrict .ltn-table
+ * @support prototype
+ * @modifier
+ * @layout responsive
+ */
+@media (max-width: 48em) {
+  .ltn-max-medium-table_stacked-horizontal,
+  .ltn-max-medium-table--stacked-horizontal {
+    border: 0; }
+  .ltn-max-medium-table_stacked-horizontal thead,
+  .ltn-max-medium-table--stacked-horizontal thead {
+    /* stylelint-disable declaration-no-important */
+    position: absolute !important;
+    margin: -1px !important;
+    border: 0 !important;
+    padding: 0 !important;
+    width: 1px !important;
+    height: 1px !important;
+    overflow: hidden !important;
+    clip: rect(0 0 0 0) !important;
+    /* stylelint-enable declaration-no-important */ }
+  .ltn-max-medium-table_stacked-horizontal th,
+  .ltn-max-medium-table--stacked-horizontal th {
+    border-top: 0; }
+  .ltn-max-medium-table_stacked-horizontal tr,
+  .ltn-max-medium-table--stacked-horizontal tr {
+    display: block;
+    border-top: 2px solid #dddbda; }
+  .ltn-max-medium-table_stacked-horizontal th,
+  .ltn-max-medium-table_stacked-horizontal td,
+  .ltn-max-medium-table--stacked-horizontal th,
+  .ltn-max-medium-table--stacked-horizontal td {
+    display: block;
+    padding: 0.75rem;
+    max-width: 100%;
+    width: 100%;
+    clear: both;
+    white-space: normal;
+    overflow: hidden;
+    text-align: left; }
+  .ltn-max-medium-table_stacked-horizontal th.ltn-truncate,
+  .ltn-max-medium-table_stacked-horizontal td.ltn-truncate,
+  .ltn-max-medium-table--stacked-horizontal th.ltn-truncate,
+  .ltn-max-medium-table--stacked-horizontal td.ltn-truncate {
+    max-width: 100%; }
+  .ltn-max-medium-table_stacked-horizontal th:before,
+  .ltn-max-medium-table_stacked-horizontal td:before,
+  .ltn-max-medium-table--stacked-horizontal th:before,
+  .ltn-max-medium-table--stacked-horizontal td:before {
+    font-size: 0.75rem;
+    line-height: 1.25;
+    color: #3e3e3c;
+    text-transform: uppercase;
+    letter-spacing: 0.0625rem;
+    display: block;
+    padding-bottom: 0.25rem;
+    content: attr(data-label); }
+  .ltn-max-medium-table_stacked-horizontal tr > td:first-child,
+  .ltn-max-medium-table_stacked-horizontal tr > td:last-child,
+  .ltn-max-medium-table--stacked-horizontal tr > td:first-child,
+  .ltn-max-medium-table--stacked-horizontal tr > td:last-child {
+    padding: 0.75rem; }
+  .ltn-max-medium-table_stacked-horizontal:not(.ltn-no-row-hover) tbody tr:hover,
+  .ltn-max-medium-table--stacked-horizontal:not(.ltn-no-row-hover) tbody tr:hover {
+    /* stylelint-disable declaration-no-important */
+    /* stylelint-enable declaration-no-important */ }
+  .ltn-max-medium-table_stacked-horizontal:not(.ltn-no-row-hover) tbody tr:hover td,
+  .ltn-max-medium-table_stacked-horizontal:not(.ltn-no-row-hover) tbody tr:hover th,
+  .ltn-max-medium-table--stacked-horizontal:not(.ltn-no-row-hover) tbody tr:hover td,
+  .ltn-max-medium-table--stacked-horizontal:not(.ltn-no-row-hover) tbody tr:hover th {
+    background-color: inherit !important;
+    box-shadow: none !important; }
+  .ltn-max-medium-table_stacked-horizontal .ltn-is-interactive .ltn-button,
+  .ltn-max-medium-table--stacked-horizontal .ltn-is-interactive .ltn-button {
+    visibility: visible; }
+  .ltn-max-medium-table_stacked-horizontal .ltn-cell-shrink,
+  .ltn-max-medium-table--stacked-horizontal .ltn-cell-shrink {
+    width: auto; } }
+
+@media (max-width: 48em) {
+  .ltn-max-medium-table_stacked-horizontal td,
+  .ltn-max-medium-table--stacked-horizontal td {
+    text-align: right; }
+  .ltn-max-medium-table_stacked-horizontal td:before,
+  .ltn-max-medium-table--stacked-horizontal td:before {
+    float: left;
+    margin-top: 0.125rem; }
+  .ltn-max-medium-table_stacked-horizontal .ltn-truncate,
+  .ltn-max-medium-table--stacked-horizontal .ltn-truncate {
+    max-width: 100%; } }
+
+.ltn-table_edit_container:focus,
+.ltn-table--edit_container:focus {
+  outline: none; }
+
+.ltn-table_edit_container:focus:before,
+.ltn-table--edit_container:focus:before {
+  content: ' ';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1;
+  background-color: #fafaf9;
+  box-shadow: 0 0 0 4px #1589ee inset; }
+
+.ltn-table_edit_container:focus .ltn-table_edit_container-message,
+.ltn-table_edit_container:focus .ltn-table--edit_container-message,
+.ltn-table--edit_container:focus .ltn-table_edit_container-message,
+.ltn-table--edit_container:focus .ltn-table--edit_container-message {
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 20rem;
+  margin-top: -2.25rem;
+  margin-left: -10rem;
+  background-color: white;
+  text-align: center;
+  z-index: 1; }
+
+.ltn-table_edit_container-message,
+.ltn-table--edit_container-message {
+  display: none; }
+
+/**
+ * Inline edit plugin for advanced tables
+ *
+ * #### Accessibility
+ * The Advanced Data Table and Inline Edit Data Table are based on the semantics,
+ * roles and interaction model of the [ARIA Grid](http://w3c.github.io/aria/practices/aria-practices.html#grid).
+ * In SLDS we overlay the ARIA Grid on top of native HTML table semantics.
+ *
+ * The role of Grid comes with 2 distinct modes, Navigation mode and Actionable
+ * mode. Both come with very specific keyboard interaction modals. Navigation
+ * mode is the default mode of the Grid.
+ *
+ * **Navigation Mode**
+ * - Tabbing into the grid focuses the first data cell in the table.
+ * - The second tab key press takes the user focus out of the grid onto the next focusable element on the page.
+ * - Once the user has tabbed out of the grid, tabbing back into the grid will return focus to the last cell the user was focused on.
+ * - Navigation in the grid is accomplished via the arrow keys.
+ * - No actionable items in cell contents are focusable.
+ * - Pressing the Enter key on a chosen grid cell, places the entire Grid into Actionable mode.
+ *
+ * **Actionable Mode**
+ * - Once in Actionable mode, all focusable items in the entire grid can be tabbed to.
+ * - Arrow navigation still takes the user cell to cell in any direction, but focuses on the first actionable item in the cell, if there is one.
+ * - Pressing the Escape key exits Actionable mode, placing the user back into Navigation mode, keeping the users cursor on the same cell they were focused in.
+ * - When interacting with a component in a cell, such as a Menu, that also uses the Escape key as an exit action, pressing Escape will take the user back to the triggering element in the current cell. A subsequent press of Escape will return the user to Navigation mode.
+ *
+ * For the purposes of these docs, the Default state of Inline Edit is
+ * representative of Navigation mode, all other states are assumed to be in Actionable Mode.
+ *
+ * @summary Initiates inline-edit mode for data-tables
+ *
+ * @name inline-edit
+ * @selector .ltn-table_edit
+ * @restrict .ltn-table
+ * @support dev-ready
+ * @variant
+ */
+.ltn-table_edit,
+.ltn-table--edit {
+  /**
+   * Cell that has error icon appear within
+   *
+   * @selector .ltn-cell-error
+   * @restrict .ltn-table_edit td
+   * @required
+   */ }
+
+.ltn-table_edit thead th,
+.ltn-table--edit thead th {
+  padding: 0; }
+
+.ltn-table_edit .ltn-cell-error,
+.ltn-table--edit .ltn-cell-error {
+  padding-left: 0; }
+
+.ltn-table_edit:not(.ltn-no-cell-focus) tbody tr:hover > .ltn-cell-edit.ltn-has-focus,
+.ltn-table--edit:not(.ltn-no-cell-focus) tbody tr:hover > .ltn-cell-edit.ltn-has-focus {
+  background-color: white;
+  box-shadow: #0070d2 0 0 0 1px inset; }
+
+.ltn-table_edit.ltn-table tbody tr:hover > .ltn-cell-edit:hover,
+.ltn-table--edit.ltn-table tbody tr:hover > .ltn-cell-edit:hover {
+  background-color: white; }
+
+.ltn-table_edit.ltn-table tbody tr:hover > .ltn-cell-edit.ltn-is-edited,
+.ltn-table--edit.ltn-table tbody tr:hover > .ltn-cell-edit.ltn-is-edited {
+  background-color: #faffbd; }
+
+.ltn-table_edit.ltn-table tbody tr:hover > .ltn-cell-edit.ltn-has-error,
+.ltn-table--edit.ltn-table tbody tr:hover > .ltn-cell-edit.ltn-has-error {
+  background-color: #faffbd;
+  box-shadow: #c23934 0 0 0 2px inset; }
+
+.ltn-table_edit .ltn-button__icon_edit:focus,
+.ltn-table_edit .ltn-button__icon--edit:focus,
+.ltn-table--edit .ltn-button__icon_edit:focus,
+.ltn-table--edit .ltn-button__icon--edit:focus {
+  fill: #1589ee; }
+
+.ltn-has-focus .ltn-th__action {
+  background-color: white;
+  box-shadow: #005fb2 0 0 0 1px inset; }
+
+.ltn-has-focus.ltn-is-resizable .ltn-th__action,
+.ltn-has-focus.ltn-is-resizable .ltn-th__action:focus,
+.ltn-has-focus.ltn-is-resizable .ltn-th__action:hover,
+.ltn-has-focus.ltn-is-resizable .ltn-th__action:focus:hover,
+.ltn-is-resizable .ltn-th__action:focus,
+.ltn-is-resizable .ltn-th__action:focus:hover {
+  background-color: white;
+  box-shadow: #005fb2 0 0 0 1px inset, #005fb2 -0.25rem 0 0 inset; }
+
+/**
+ * Informs a table cell that it has editing capabilities
+ *
+ * @selector .ltn-cell-edit
+ * @restrict .ltn-table_edit th, .ltn-table_edit td
+ */
+.ltn-table .ltn-cell-edit {
+  outline: 0;
+  /**
+   * Informs a cell that it has been edited but not saved
+   *
+   * @selector .ltn-is-edited
+   * @restrict .ltn-cell-edit
+   * @modifier
+   */
+  /**
+   * Informs a cell that it has an error inside of it
+   *
+   * @selector .ltn-has-error
+   * @restrict .ltn-cell-edit
+   * @modifier
+   */ }
+
+.ltn-table .ltn-cell-edit.ltn-has-focus {
+  background-color: white;
+  box-shadow: #005fb2 0 0 0 1px inset; }
+
+.ltn-table .ltn-cell-edit.ltn-has-focus .ltn-button__icon_edit,
+.ltn-table .ltn-cell-edit.ltn-has-focus .ltn-button__icon--edit,
+.ltn-table .ltn-cell-edit.ltn-has-focus .ltn-button__icon_lock,
+.ltn-table .ltn-cell-edit.ltn-has-focus .ltn-button__icon--lock {
+  opacity: 1; }
+
+.ltn-table .ltn-cell-edit.ltn-has-focus:hover {
+  box-shadow: #005fb2 0 0 0 1px inset; }
+
+.ltn-table .ltn-cell-edit.ltn-has-focus a:focus {
+  text-decoration: underline;
+  outline: none; }
+
+.ltn-table .ltn-cell-edit.ltn-is-edited, .ltn-table .ltn-cell-edit.ltn-is-edited:hover {
+  background-color: #faffbd; }
+
+.ltn-table .ltn-cell-edit.ltn-has-error, .ltn-table .ltn-cell-edit.ltn-has-error:hover {
+  background-color: #faffbd;
+  box-shadow: #c23934 0 0 0 2px inset; }
+
+/**
+ * @selector .ltn-cell-edit__button
+ * @restrict .ltn-cell-edit button
+ */
+.ltn-cell-edit__button {
+  width: 1.25rem;
+  height: 1.25rem;
+  -ms-flex-negative: 0;
+      flex-shrink: 0; }
+
+.ltn-cell-edit__button:focus .ltn-button__icon_edit,
+.ltn-cell-edit__button:focus .ltn-button__icon--edit {
+  opacity: 1; }
+
+/**
+ * Handles children of the table where we don't want any focusable cells
+ *
+ * @selector .ltn-no-cell-focus
+ * @restrict .ltn-table_edit
+ * @modifier
+ */
+.ltn-no-cell-focus .ltn-has-focus {
+  background: #2B83C8;
+  box-shadow: none; }
+
+.ltn-no-cell-focus .ltn-has-focus .ltn-th__action,
+.ltn-no-cell-focus .ltn-has-focus .ltn-th__action:hover,
+.ltn-no-cell-focus .ltn-has-focus .ltn-th__action:focus,
+.ltn-no-cell-focus .ltn-has-focus .ltn-th__action:focus:hover {
+  color: inherit;
+  background-color: white;
+  box-shadow: none; }
+
+.ltn-no-cell-focus .ltn-has-focus .ltn-button__icon_edit,
+.ltn-no-cell-focus .ltn-has-focus .ltn-button__icon--edit {
+  opacity: 1; }
+
+.ltn-no-cell-focus .ltn-has-focus.ltn-is-resizable:hover .ltn-th__action {
+  background-color: white;
+  box-shadow: #dddbda -0.25rem 0 0 inset; }
+
+.ltn-no-cell-focus .ltn-is-sortable.ltn-has-focus .ltn-is-sortable__icon {
+  display: none; }
+
+.ltn-no-cell-focus .ltn-is-sorted.ltn-has-focus .ltn-is-sortable__icon {
+  display: inline-block;
+  fill: #706e6b; }
+
+.ltn-no-cell-focus .ltn-is-edited, .ltn-no-cell-focus .ltn-is-edited:hover {
+  background-color: #faffbd; }
+
+.ltn-no-cell-focus .ltn-has-error, .ltn-no-cell-focus .ltn-has-error:hover {
+  background-color: #faffbd;
+  box-shadow: #c23934 0 0 0 2px inset; }
+
+.ltn-no-cell-focus thead .ltn-has-focus:hover {
+  color: #006dcc; }
+
+.ltn-no-cell-focus thead .ltn-has-focus:hover .ltn-is-sortable__icon {
+  display: inline-block;
+  fill: #006dcc; }
+
+.ltn-hint-parent .ltn-cell-edit .ltn-button__icon_edit,
+.ltn-hint-parent .ltn-cell-edit .ltn-button__icon--edit,
+.ltn-hint-parent .ltn-cell-edit .ltn-button__icon_lock,
+.ltn-hint-parent .ltn-cell-edit .ltn-button__icon--lock {
+  opacity: 0; }
+
+.ltn-hint-parent .ltn-cell-edit:hover .ltn-button__icon_edit,
+.ltn-hint-parent .ltn-cell-edit:hover .ltn-button__icon--edit, .ltn-hint-parent .ltn-cell-edit:focus .ltn-button__icon_edit,
+.ltn-hint-parent .ltn-cell-edit:focus .ltn-button__icon--edit {
+  opacity: 0.5; }
+
+.ltn-hint-parent .ltn-cell-edit:hover .ltn-button__icon_edit:hover, .ltn-hint-parent .ltn-cell-edit:hover .ltn-button__icon_edit:focus,
+.ltn-hint-parent .ltn-cell-edit:hover .ltn-button__icon--edit:hover,
+.ltn-hint-parent .ltn-cell-edit:hover .ltn-button__icon--edit:focus, .ltn-hint-parent .ltn-cell-edit:focus .ltn-button__icon_edit:hover, .ltn-hint-parent .ltn-cell-edit:focus .ltn-button__icon_edit:focus,
+.ltn-hint-parent .ltn-cell-edit:focus .ltn-button__icon--edit:hover,
+.ltn-hint-parent .ltn-cell-edit:focus .ltn-button__icon--edit:focus {
+  fill: #1589ee;
+  opacity: 1; }
+
+.ltn-hint-parent .ltn-cell-edit:hover .ltn-button__icon_lock,
+.ltn-hint-parent .ltn-cell-edit:hover .ltn-button__icon--lock, .ltn-hint-parent .ltn-cell-edit:focus .ltn-button__icon_lock,
+.ltn-hint-parent .ltn-cell-edit:focus .ltn-button__icon--lock {
+  opacity: 0.5; }
+
+.ltn-hint-parent .ltn-cell-edit.ltn-has-focus .ltn-button__icon_edit,
+.ltn-hint-parent .ltn-cell-edit.ltn-has-focus .ltn-button__icon--edit {
+  fill: #706e6b;
+  opacity: 1; }
+
+/**
+ * @selector .ltn-form-element__label_edit
+ * @restrict .ltn-popover_edit label
+ */
+.ltn-form-element__label_edit,
+.ltn-form-element__label--edit {
+  margin: 0 0.125rem 0; }
+
+/**
+ * Dialog specific for inline-edit popover
+ *
+ * @selector .ltn-popover_edit
+ * @restrict .ltn-popover
+ * @required
+ */
+.ltn-popover_edit,
+.ltn-popover--edit {
+  border-top: 0;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0; }
+
+.ltn-popover_edit .ltn-popover__body,
+.ltn-popover--edit .ltn-popover__body {
+  padding: 0.25rem 0.25rem 0.25rem 0; }
+
+.ltn-popover_edit .ltn-form-element__help,
+.ltn-popover--edit .ltn-form-element__help {
+  width: 100%;
+  padding-left: 0.75rem; }
+
+.ltn-table_header-fixed_container,
+.ltn-table--header-fixed_container {
+  position: relative;
+  padding-top: 2rem;
+  background-color: #fafaf9;
+  overflow: hidden; }
+
+.ltn-table_header-fixed_container:before,
+.ltn-table--header-fixed_container:before {
+  border-bottom: 1px solid #dddbda;
+  content: '';
+  display: block;
+  position: relative;
+  width: 100%; }
+
+.ltn-cell-fixed {
+  background-color: #fafaf9;
+  position: absolute;
+  top: 0;
+  min-height: 2rem; }
+
+.ltn-table_header-fixed,
+.ltn-table--header-fixed {
+  border-top: 0; }
+
+.ltn-table_header-fixed thead th,
+.ltn-table--header-fixed thead th {
+  position: static;
+  padding: 0;
+  border-top: 0; }
+
+.ltn-table_header-fixed tbody tr:first-child td,
+.ltn-table_header-fixed tbody tr:first-child th,
+.ltn-table--header-fixed tbody tr:first-child td,
+.ltn-table--header-fixed tbody tr:first-child th {
+  border: 0; }
+
+/**
+ * @summary Used to remove the top border when a table's header is visually hidden
+ *
+ * @name hidden-header
+ * @selector .ltn-table_header-hidden
+ * @restrict .ltn-table
+ * @support dev-ready
+ * @variant
+ */
+.ltn-table_header-hidden {
+  border-top: 0; }

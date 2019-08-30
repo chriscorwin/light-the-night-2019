@@ -1,0 +1,47 @@
+/**
+ * @summary Contains floats and stops wrapping of elements following it.
+ *
+ * @name clearfix
+ * @selector .ltn-clearfix
+ * @modifier
+ */
+.ltn-clearfix:after {
+  content: '';
+  display: table;
+  clear: both; }
+
+.ltn-clear {
+  clear: both; }
+
+/**
+ * @summary Pulls element from document flow and floats left. Text and other elements wrap around it.
+ *
+ * @name float-left
+ * @selector .ltn-float_left
+ * @modifier
+ */
+.ltn-float_left,
+.ltn-float--left {
+  float: left; }
+
+/**
+ * @summary Removes float from an element that has attribute already
+ *
+ * @name float-none
+ * @selector .ltn-float_none
+ * @modifier
+ */
+.ltn-float_none,
+.ltn-float--none {
+  float: none; }
+
+/**
+ * @summary Pulls element from document flow and floats right. Text and other elements wrap around it.
+ *
+ * @name float-right
+ * @selector .ltn-float_right
+ * @modifier
+ */
+.ltn-float_right,
+.ltn-float--right {
+  float: right; }

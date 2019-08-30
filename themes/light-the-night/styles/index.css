@@ -2,4 +2,16 @@
   width: 10rem;
 }
 
+#CTA-buttons a, #sponsor-logos a {
+  display: block;
+  cursor: pointer;
+}
+
+#CTA-buttons a.clickable-image img, #sponsor-logos a.clickable-image img {
+  display: block;
+  margin: 0 auto;
+  width: 50%;
+  height: 50%;
+}
+
 /*# sourceMappingURL=index.css.map */

@@ -1,10 +1,4 @@
 body, html {
-  background-image: none;
-  background-image: linear-gradient(180deg, #011425 1%, #063960 49%, #083C64 65%, #1B364C 71%, #102636 73%, #051A26 75%, #051A26 100%);
-  background-repeat: repeat-x;
-  background-color: #051A26;
-  background-attachment: fixed;
-  background-size: 100% 100%;
   transition: 500ms all;
   color: white;
 }
@@ -22,6 +16,14 @@ h2 {
   color: #FFFFFF;
   text-align: center;
   font-weight: 100;
+}
+
+body {
+  background-image: none;
+  background-image: linear-gradient(180deg, #011425 1%, #063960 49%, #083C64 65%, #1B364C 71%, #102636 73%, #051A26 75%, #051A26 100%);
+  background-repeat: repeat-x;
+  background-color: #051A26;
+  background-size: 100% 100%;
 }
 
 /*# sourceMappingURL=light-the-night.css.map */

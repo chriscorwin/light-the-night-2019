@@ -1,23 +1,60 @@
-<h1>Light the night</h1>
-<h2>When we walk, cancer runs.</h2>
+<div class="ltn-container_x-large">
 
 
-<div id="sponsor-logos" class="ltn-grid ltn-wrap ltn-grid_align-center">
-	<div class="ltn-col ltn-size_1-of-1 ltn-large-size_6-of-12">
-		<img src="/images/salesforce-logo.svg"/>
+	<h1>Light the night</h1>
+	<h2>When we walk, cancer runs.</h2>
+
+
+
+
+	<div id="sponsor-logos"  class="ltn-grid ltn-wrap">
+		<div class="ltn-col ltn-size_1-of-1 ltn-large-size_6-of-12">
+			<a class="clickable-image sponsor-logo" id="sponsor-logo--salesforce" href="#salesforce" title="Salesforce">
+				<img src="/images/salesforce-logo.svg">
+			</a>
+		</div>
+		<div class="ltn-col ltn-size_1-of-1 ltn-large-size_6-of-12">
+			<a class="clickable-image sponsor-logo" id="sponsor-logo--leukemia-and-lymphoma-society" href="#leukemia-and-lymphoma-society" title="Leukemia and Lymphoma Society">
+				<img src="/images/leukemia-and-lymphoma-society-logo.png">
+			</a>
+		</div>
 	</div>
-	<div class="ltn-col ltn-size_1-of-1 ltn-large-size_6-of-12">
-		<img src="/images/leukemia-and-lymphoma-society-logo.png"/>
+
+	<div id="CTA-buttons"  class="ltn-grid ltn-wrap">
+		<div class="ltn-col ltn-size_1-of-1 ltn-large-size_4-of-12">
+			<a class="clickable-image CTA-button" id="CTA-button--walk" href="#walk" title="Walk">
+				<img src="/images/CTA-button--walk.png">
+			</a>
+		</div>
+		<div class="ltn-col ltn-size_1-of-1 ltn-large-size_4-of-12">
+			<a class="clickable-image CTA-button" id="CTA-button--donate" href="#donate" title="Donate">
+				<img src="/images/CTA-button--donate.png">
+			</a>
+		</div>
+		<div class="ltn-col ltn-size_1-of-1 ltn-large-size_4-of-12">
+			<a class="clickable-image CTA-button" id="CTA-button--learn" href="#learn" title="Learn">
+				<img src="/images/CTA-button--learn.png">
+			</a>
+		</div>
+	</div>
+
+
+
+	<div id="walk">
+		<h3>Find a Salesforce Walk</h3>
+
+		<%- include(`includes/${locals.urlSlug}/${locals.urlSlug}-contents-walk-table`) _%>
+	</div>
+
+
+
+
+	<div id="background-gradient"></div>
+	<div id="background-stars"></div>
+	<div id="background-mountains-far"></div>
+	<div id="background-mountains-middle"></div>
+	<div id="background-floor">
+		<img id="down-arrow" src="images/down-arrow.gif">
 	</div>
 </div>
-<div id="CTA-buttons" class="ltn-grid ltn-wrap ltn-grid_align-center">
-	<div class="ltn-col ltn-size_1-of-1 ltn-large-size_4-of-12">
-		<img src="/images/CTA-button--walk.svg"/>
-	</div>
-	<div class="ltn-col ltn-size_1-of-1 ltn-large-size_4-of-12">
-		<img src="/images/CTA-button--donate.svg"/>
-	</div>
-	<div class="ltn-col ltn-size_1-of-1 ltn-large-size_4-of-12">
-		<img src="/images/CTA-button--learn.svg"/>
-	</div>
-</div>
+
