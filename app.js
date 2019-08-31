@@ -16,9 +16,8 @@ const sassMiddleware = require('node-sass-middleware');
 const classnames = require('classnames');
 const sizeOf = require('image-size');
 
-
-
-
+const Papa = require('papaparse');
+const donationData = Papa.parse(fs.readFileSync('./themes/light-the-night/master.csv').toString());
 
 let scssDebug = false;
 console.debug = function() {
@@ -33,6 +32,7 @@ console.debug = function() {
 };
 
 const config = require('./config/config.js')();
+config.localization.contestData = donationData.data;
 
 const app = express();
 
