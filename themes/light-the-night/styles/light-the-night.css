@@ -3,6 +3,14 @@ body, html {
   color: white;
 }
 
+body {
+  background-image: none;
+  background-image: linear-gradient(180deg, #011425 1%, #063960 49%, #083C64 65%, #1B364C 71%, #102636 73%, #051A26 75%, #051A26 100%);
+  background-repeat: repeat-x;
+  background-color: #051A26;
+  background-size: 100% 100%;
+}
+
 h1, h2, h3, h4, h5, h6 {
   font-family: Gotham-Bold;
   font-size: 84px;
@@ -18,12 +26,16 @@ h2 {
   font-weight: 100;
 }
 
-body {
-  background-image: none;
-  background-image: linear-gradient(180deg, #011425 1%, #063960 49%, #083C64 65%, #1B364C 71%, #102636 73%, #051A26 75%, #051A26 100%);
-  background-repeat: repeat-x;
-  background-color: #051A26;
-  background-size: 100% 100%;
+h3 {
+  font-family: TrendSansOne;
+  font-size: 3rem;
+  color: #FFFFFF;
+  letter-spacing: -6.82px;
+  text-align: center;
+  text-shadow: 0 4px 0 #010D14;
+  line-height: 3rem;
+  margin: 0 auto;
+  padding: 0;
 }
 
 /*# sourceMappingURL=light-the-night.css.map */
