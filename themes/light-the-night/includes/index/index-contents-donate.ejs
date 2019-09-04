@@ -1,3 +1,36 @@
 <div id="trophy-gold_wrapper">
 <%- include(`images/trophy--gold.svg`) %>
 </div>
+<%
+// Columns from the CSV
+const amountIdx = 5;
+const cityIdx = 8;
+const stateIdx = 9;
+// An object with city names as the key for easy accumulation by city
+const citySums = localization.contestData.slice(1).reduce(
+    (cities, row) => {
+        const city = row[cityIdx];
+        const state = row[stateIdx];
+        const amount = row[amountIdx];
+        if (!cities[city]) cities[city] = { state: state, amount: 0 };
+        cities[city].amount += parseFloat(amount);
+        return cities
+    },
+    {}
+);
+/*
+   An array of objects, sorted by their amount descending.  The objects look like this:
+    {
+       city: string,
+       state: string, // postal abbreviation, like IN or CA
+       amount: number
+    }
+*/
+const mergeCityName = ([city, data]) => Object.assign(data, { city });
+const descendingSorter = (l, r) => l.amount < r.amount ? 1 : -1;
+const cities = Object.entries(citySums).map(mergeCityName).sort(descendingSorter);
+%>
+
+<!-- City Data, printed out for dev convenience
+<%- JSON.stringify(cities, null, 2); %>
+-->
