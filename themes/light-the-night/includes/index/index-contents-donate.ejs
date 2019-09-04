@@ -1,3 +1,21 @@
 <div id="trophy-gold_wrapper">
 <%- include(`images/trophy--gold.svg`) %>
 </div>
+<%
+// We need to sum all teams for each city, then sort the "city" rankings
+const amountIdx = 5; // Which "column" is the amount column
+const cityIdx = 8;
+const stateIdx = 9;
+const citySums = localization.contestData.reduce(
+    (cities, row) => {
+        const city = row[cityIdx];
+        const state = row[stateIdx];
+        const amount = row[amountIdx];
+        if (!cities[city]) cities[city] = { state: state, amount: 0 };
+        cities[city].amount += parseFloat(amount);
+        return cities
+    },
+    {});
+console.log(citySums);
+// Now sort the citySums object into an array
+%>
