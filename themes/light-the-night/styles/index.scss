@@ -177,13 +177,43 @@
 		// max-width: 100%;
 		margin: 4rem 20vw 4rem 20vw ;
 		border: 1px solid #0B5790;
+
+		.contest-data-table {
+			background: #E8BB66;
+			box-shadow: 0 0 24px 10px rgba(0,0,0,0.50);
+
+			font-family: RobotoSlab-Regular;
+			font-size: 24px;
+			color: #000000;
+			letter-spacing: -1.13px;
+			line-height: 52px;
+
+
+			&.ltn-table thead th {
+				background-color: #BC8D60;
+				font-family: TrendSansOne;
+				font-size: 24px;
+				color: #000000;
+				letter-spacing: -2.73px;
+				padding: 0.75rem 0.5rem 0.45rem;
+
+			}
+			&.ltn-table_striped tbody tr:nth-of-type(even) > td, 
+			&.ltn-table_striped tbody tr:nth-of-type(even) > th, 
+			&.ltn-table--striped tbody tr:nth-of-type(even) > td, 
+			&.ltn-table--striped tbody tr:nth-of-type(even) > th {
+				background-color: #BC8D60;
+			}
+
+
+		}
 	}
 
 	.ltn-progress-bar_wrapper {
 
 		background: #E8BB66;
 		box-shadow: 0 0 24px 10px rgba(0,0,0,0.50);
-		padding: 4rem;
+		padding: 4rem 3rem 1rem;
 
 		h2 {
 			font-family: TrendSansOne;
