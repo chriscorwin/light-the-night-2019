@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="776px" height="769px" viewBox="0 0 776 769" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 58 (84663) - https://sketch.com -->
+    <title>donate--awards-gold</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <radialGradient cx="50%" cy="50%" fx="50%" fy="50%" r="76.7393185%" id="radialGradient-1">
+            <stop stop-color="#BC8D60" offset="0%"></stop>
+            <stop stop-color="#FBF3C6" stop-opacity="0" offset="100%"></stop>
+        </radialGradient>
+        <linearGradient x1="20.1604926%" y1="90.0837836%" x2="85.0121641%" y2="12.3024984%" id="linearGradient-2">
+            <stop stop-color="#E8BB66" offset="0%"></stop>
+            <stop stop-color="#EFD67B" offset="100%"></stop>
+        </linearGradient>
+        <circle id="path-3" cx="328" cy="253" r="160"></circle>
+        <filter x="-13.4%" y="-12.8%" width="126.9%" height="126.9%" filterUnits="objectBoundingBox" id="filter-4">
+            <feMorphology radius="6" operator="dilate" in="SourceAlpha" result="shadowSpreadOuter1"></feMorphology>
+            <feOffset dx="0" dy="2" in="shadowSpreadOuter1" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="12" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feComposite in="shadowBlurOuter1" in2="SourceAlpha" operator="out" result="shadowBlurOuter1"></feComposite>
+            <feColorMatrix values="0 0 0 0 0.42745098   0 0 0 0 0.31372549   0 0 0 0 0.309803922  0 0 0 1 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="Website-v2" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="light-the-night-2019___desktop-layout" transform="translate(-254.000000, -2602.000000)">
+            <g id="section___section--donate" transform="translate(0.000000, 2602.000000)">
+                <g id="donate--awards" transform="translate(248.000000, 123.000000)">
+                    <g id="donate--awards-gold" transform="translate(69.000000, 0.000000)">
+                        <path d="M328,510 C468.832611,510 583,395.832611 583,255 C583,114.167389 468.832611,0 328,0 C187.167389,0 73,114.167389 73,255 C73,395.832611 187.167389,510 328,510 Z" id="gold-medal--evidence-of-beatification" stroke="url(#radialGradient-1)" stroke-width="341" stroke-dasharray="103,120"></path>
+                        <g id="gold-medal">
+                            <use fill="black" fill-opacity="1" filter="url(#filter-4)" xlink:href="#path-3"></use>
+                            <use stroke="url(#linearGradient-2)" stroke-width="12" fill="#FBF3C6" fill-rule="evenodd" xlink:href="#path-3"></use>
+                        </g>
+                        <g id="donate--awards-gold--ribbon-and-labels" transform="translate(0.000000, 137.000000)">
+                            <text id="award-label--gold" font-family="RobotoSlab-Light, Roboto Slab" font-size="29" font-weight="300" letter-spacing="-1.36470588" fill="#010D14">
+                                <tspan x="263.381126" y="30">First Place</tspan>
+                            </text>
+                            <g id="blue-ribbon" transform="translate(0.000000, 50.000000)">
+                                <g id="blue-ribbon-shape">
+                                    <g id="Group-36" transform="translate(1.000000, 14.000000)">
+                                        <polygon id="Rectangle" fill="#032F4C" points="-5.91149352e-12 21.0886076 98 21.0886076 98 119 -5.91149352e-12 119 30 70.0443038"></polygon>
+                                        <polygon id="Rectangle-Copy-24" fill="#010D14" transform="translate(79.500000, 59.500000) scale(-1, 1) translate(-79.500000, -59.500000) " points="61 21.0886076 98 0 98 97.9113924 61 119"></polygon>
+                                    </g>
+                                    <g id="Group-37" transform="translate(548.000000, 14.000000)">
+                                        <polygon id="Rectangle-Copy-23" fill="#032F4C" transform="translate(49.000000, 70.044304) scale(-1, 1) translate(-49.000000, -70.044304) " points="-5.91149352e-12 21.0886076 98 21.0886076 98 119 -5.91149352e-12 119 30 70.0443038"></polygon>
+                                        <polygon id="Rectangle" fill="#010D14" points="0 21.0886076 37 0 37 97.9113924 0 119"></polygon>
+                                    </g>
+                                    <rect id="Rectangle" fill="#032F4C" x="62" y="0" width="533" height="112"></rect>
+                                    <polyline id="Path-2" stroke="#034B83" stroke-width="2" points="645 35 594 35 594 0 61 0 61 35 7.95858171e-12 35"></polyline>
+                                </g>
+                            </g>
+                            <text id="dyn-data___amount-raised--gold" font-family="TrendSansOne, Trend Sans" font-size="38" font-weight="300" letter-spacing="-3" fill="#080707">
+                                <tspan x="221.126" y="216">$38,221.00</tspan>
+                            </text>
+                            <text id="dyn-data___state-name--gold" font-family="TrendSansOne, Trend Sans" font-size="24" font-weight="300" letter-spacing="-1.12941176" fill="#FFFFFF">
+                                <tspan x="289.455529" y="144">STATE</tspan>
+                            </text>
+                            <text id="dyn-data___city-name--gold" font-family="TrendSansOne, Trend Sans" font-size="60" font-weight="300" letter-spacing="-2.82352941" fill="#FFFFFF">
+                                <tspan x="253.447059" y="116">CITY</tspan>
+                            </text>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -129,12 +129,6 @@
 
 }
 
-#donate {
-	background-image: url('../images/donate--background-image.png');
-	background-color: #5B3E22;
-	background-size: cover;
-}
-
 #walk {
 	background-image: url(../images/walk--background-image.png);
 	background-color: #012f4c;
@@ -152,10 +146,42 @@
 		font-size: 3.75rem;
 	}
 
-	#contest-data-table_wrapper {
+	.contest-data-table_wrapper {
 		width: 80%;
 		margin: 4rem auto 400px;
 		border: 1px solid #0B5790;
 	}
 }
 
+
+#donate {
+	background-image: url('../images/donate--background-image.png');
+	background-color: #5B3E22;
+	background-size: cover;
+
+	#trophy-gold_wrapper {
+		margin-bottom: -100px;
+	}
+
+	#fundrasing-progress {
+		margin: 0 18vw;
+
+		.donate-place-card {
+			
+			svg {
+				margin: 0 auto;
+				display: block;
+				width: 80%;
+			}
+		}
+
+	}
+
+
+	.contest-data-table_wrapper {
+		width: 80%;
+		margin: 4rem auto 400px;
+		border: 1px solid #0B5790;
+	}
+	
+}
