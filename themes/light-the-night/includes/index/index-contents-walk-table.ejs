@@ -33,9 +33,11 @@
 			tableRowHtmlOut += `<tr class="ltn-hint-parent">`;
 			localization.contestTableRowCellsToShow.forEach(function(columnIndex, index) {
 				if (index === 0) { 
-					tableRowHtmlOut += `<th data-label="${rowData[columnIndex]}" scope="row">`;
-					tableRowHtmlOut += `<div class="ltn-truncate" title="${rowData[columnIndex]}">`;
-					tableRowHtmlOut += `<a href="javascript:void(0);" tabindex="-1">${rowData[columnIndex]}</a>`;
+          const abbr = rowData[columnIndex];
+          const stateName = localization.abbToName(abbr);
+					tableRowHtmlOut += `<th data-label="${stateName}" scope="row">`;
+					tableRowHtmlOut += `<div class="ltn-truncate" title="${stateName}">`;
+					tableRowHtmlOut += `<a href="javascript:void(0);" tabindex="-1">${stateName}</a>`;
 					tableRowHtmlOut += `</div>`;
 					tableRowHtmlOut += `</th>`;
 				} else {
