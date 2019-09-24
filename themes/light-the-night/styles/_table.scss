@@ -52,7 +52,14 @@
    * @selector .ltn-has-focus
    * @restrict .ltn-table th, .ltn-table td
    * @modifier
-   */ }
+   */ 
+
+
+.ltn-table_cell-align-right {
+  text-align: right;
+  padding-right: 2rem;
+}
+ }
 
 .ltn-table th,
 .ltn-table td {
@@ -1122,3 +1129,4 @@
  */
 .ltn-table_header-hidden {
   border-top: 0; }
+

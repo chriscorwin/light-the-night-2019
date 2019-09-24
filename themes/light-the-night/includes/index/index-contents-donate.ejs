@@ -87,7 +87,7 @@ const cities = Object.entries(citySums).map(mergeCityName).sort(descendingSorter
 <%- JSON.stringify(cities, null, 2); %>
 -->
 
-<%- include(`includes/${locals.urlSlug}/${locals.urlSlug}-contents-donate-table`, {'citiesDescendingOrder': cities}) _%>
+<%- include(`includes/${locals.urlSlug}/${locals.urlSlug}-contents-donate-table`, {'citiesDescendingOrder': cities, formatMoney}) _%>
 
 
 <div class="ltn-progress-bar_wrapper">

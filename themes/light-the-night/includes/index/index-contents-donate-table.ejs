@@ -40,13 +40,13 @@
 				tableRowHtmlOut += `<div class="ltn-truncate" title="${rowData.city}">${rowData.city}</div>`;
 				tableRowHtmlOut += `</td>`;
 
-				tableRowHtmlOut += `<td data-label="${rowData.amount}">`;
-				tableRowHtmlOut += `<div class="ltn-truncate" title="${rowData.amount}">${rowData.amount}</div>`;
+				tableRowHtmlOut += `<td class="ltn-table_cell-align-right" data-label="${rowData.amount}">`;
+				tableRowHtmlOut += `<div class="ltn-truncate" title="$${formatMoney(rowData.amount)}">$${formatMoney(rowData.amount)}</div>`;
 				tableRowHtmlOut += `</td>`;
 
 
 				tableRowHtmlOut += `<td data-label="Action">`;
-				tableRowHtmlOut += `<div class="ltn-truncate" title="Donate"><button class="ltn-button ltn-button-walk">Donate</button></div>`;
+				tableRowHtmlOut += `<div class="ltn-truncate" title="Donate"><button class="ltn-button ltn-button--neutral">Donate</button></div>`;
 				tableRowHtmlOut += `</td>`;
 			tableRowHtmlOut += `</tr>`;
 			echo(`${tableRowHtmlOut}`);

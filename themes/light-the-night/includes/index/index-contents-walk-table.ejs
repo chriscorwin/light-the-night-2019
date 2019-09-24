@@ -38,6 +38,12 @@
 					tableRowHtmlOut += `<th data-label="${stateName}" scope="row">`;
 					tableRowHtmlOut += `<div class="ltn-truncate" title="${stateName}">${stateName}</div>`;
 					tableRowHtmlOut += `</th>`;
+				} else if (index === 2) { 
+					const abbr = rowData[columnIndex];
+					const stateName = localization.abbToName(abbr);
+					tableRowHtmlOut += `<td class="ltn-table_cell-align-right" data-label="${rowData[columnIndex]}">`;
+					tableRowHtmlOut += `<div class="ltn-truncate " title="${rowData[columnIndex]}">${rowData[columnIndex]}</div>`;
+					tableRowHtmlOut += `</td>`;
 				} else {
 					tableRowHtmlOut += `<td data-label="${rowData[columnIndex]}">`;
 					tableRowHtmlOut += `<div class="ltn-truncate" title="${rowData[columnIndex]}">${rowData[columnIndex]}</div>`;
@@ -45,7 +51,7 @@
 				}
 			});
 			tableRowHtmlOut += `<td data-label="Action">`;
-			tableRowHtmlOut += `<div class="ltn-truncate" title="Sign up to walk">Sign up to walk</div>`;
+				tableRowHtmlOut += `<div class="ltn-truncate" title="Sign up to walk"><button class="ltn-button ltn-button--primary">Sign up to walk</button></div>`;
 			tableRowHtmlOut += `</td>`;
 			tableRowHtmlOut += `</tr>`;
 			echo(`${tableRowHtmlOut}`);

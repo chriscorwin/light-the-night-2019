@@ -1,0 +1,167 @@
+
+/**
+ * @summary Creates a smaller button style
+ * @selector .ltn-button_small
+ * @deprecated
+ */
+.ltn-button_small,
+.ltn-button--small {
+  line-height: 1.75rem;
+  min-height: 2rem; }
+
+/**
+ * @summary This neutralizes all the base styles making it look like a text link
+ * @name base
+ * @selector .ltn-button
+ * @restrict button, a, span
+ * @support dev-ready
+ * @variant
+ */
+.ltn-button {
+  position: relative;
+  display: inline-block;
+  padding: 0;
+  background: transparent;
+  background-clip: border-box;
+  border: 1px solid transparent;
+  border-radius: 0.25rem;
+  line-height: 1.875rem;
+  text-decoration: none;
+  color: #0070d2;
+  -webkit-appearance: none;
+  white-space: normal;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none; }
+
+.ltn-button:hover, .ltn-button:focus, .ltn-button:active, .ltn-button:visited {
+  text-decoration: none; }
+
+.ltn-button:hover, .ltn-button:focus {
+  color: #005fb2; }
+
+.ltn-button:focus {
+  outline: 0;
+  box-shadow: 0 0 3px #0070D2; }
+
+.ltn-button:active {
+  color: #005fb2; }
+
+.ltn-button[disabled], .ltn-button:disabled {
+  color: #7C5732; }
+
+.ltn-button[disabled] *, .ltn-button:disabled * {
+  pointer-events: none; }
+
+.ltn-button a {
+  color: currentColor; }
+
+.ltn-button:hover .ltn-button__icon, .ltn-button:focus .ltn-button__icon, .ltn-button:active .ltn-button__icon, .ltn-button[disabled] .ltn-button__icon, .ltn-button:disabled .ltn-button__icon {
+  fill: currentColor;
+  pointer-events: none; }
+
+.ltn-button + .ltn-button-group,
+.ltn-button + .ltn-button-group-list {
+  margin-left: 0.25rem; }
+
+.ltn-button + .ltn-button {
+  margin-left: 0.25rem; }
+
+a.ltn-button {
+  text-align: center; }
+
+a.ltn-button:focus {
+  outline: 0;
+  box-shadow: 0 0 3px #0070D2; }
+
+a.ltn-button_inverse:focus,
+a.ltn-button--inverse:focus {
+  outline: none;
+  box-shadow: 0 0 3px #ecebea;
+  border: 1px solid #ecebea; }
+
+
+
+/**
+ * @name neutral
+ * @summary Creates the gray border with white background default style
+ * @selector .ltn-button_neutral
+ * @restrict .ltn-button
+ * @modifier
+ * @group theme
+ */
+.ltn-button_neutral,
+.ltn-button--neutral {
+  padding-left: 1rem;
+  padding-right: 1rem;
+  text-align: center;
+  vertical-align: middle;
+  border: 1px solid #7C5732;
+  transition: border 0.15s linear;
+  border-color: #7C5732;
+  background-color: #7C5732;
+
+  font-family: RobotoSlab-Regular;
+  font-size: 18px;
+  color: #FFFFFF;
+  text-align: center;
+
+   }
+
+.ltn-button_neutral:hover, .ltn-button_neutral:focus,
+.ltn-button--neutral:hover,
+.ltn-button--neutral:focus {
+  background-color: #f4f6f9; }
+
+.ltn-button_neutral:active,
+.ltn-button--neutral:active {
+  background-color: #eef1f6; }
+
+.ltn-button_neutral[disabled], .ltn-button_neutral:disabled,
+.ltn-button--neutral[disabled],
+.ltn-button--neutral:disabled {
+  background-color: white;
+  cursor: default; }
+
+
+/**
+ * @name primary
+ * @summary Creates the gray border with white background default style
+ * @selector .ltn-button_primary
+ * @restrict .ltn-button
+ * @modifier
+ * @group theme
+ */
+.ltn-button_primary,
+.ltn-button--primary {
+  padding-left: 1rem;
+  padding-right: 1rem;
+  text-align: center;
+  vertical-align: middle;
+  border: 1px solid #FFFFFF;
+  transition: border 0.15s linear;
+  border-color: #FFFFFF;
+  background-color: #FFFFFF;
+
+  font-family: RobotoSlab-Regular;
+  font-size: 18px;
+  color: #2D4F7E;
+  text-align: center;
+
+   }
+
+.ltn-button_primary:hover, .ltn-button_primary:focus,
+.ltn-button--primary:hover,
+.ltn-button--primary:focus {
+  background-color: #f4f6f9; }
+
+.ltn-button_primary:active,
+.ltn-button--primary:active {
+  background-color: #eef1f6; }
+
+.ltn-button_primary[disabled], .ltn-button_primary:disabled,
+.ltn-button--primary[disabled],
+.ltn-button--primary:disabled {
+  background-color: white;
+  cursor: default; }
