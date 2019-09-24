@@ -77,10 +77,6 @@
   height: 88%;
 }
 
-#contest-data-table {
-  margin: 0 auto;
-}
-
 #trophy-gold_wrapper {
   margin: 0 auto;
   width: 510px;
@@ -133,9 +129,47 @@
 }
 
 #donate .contest-data-table_wrapper {
-  width: 80%;
-  margin: 4rem auto 400px;
+  margin: 4rem 20vw 4rem 20vw;
   border: 1px solid #0B5790;
+}
+
+#donate .ltn-progress-bar_wrapper {
+  background: #E8BB66;
+  box-shadow: 0 0 24px 10px rgba(0, 0, 0, 0.5);
+  padding: 4rem;
+}
+
+#donate .ltn-progress-bar_wrapper h2 {
+  font-family: TrendSansOne;
+  font-size: 36px;
+  color: #010D14;
+  letter-spacing: -1.69px;
+  text-align: center;
+}
+
+#donate .ltn-progress-bar_wrapper .ltn-progress-bar {
+  background: #5B3E22;
+  border: 5px solid #39210A;
+  border-radius: 2rem;
+  margin: 0 auto;
+  width: 100%;
+  height: 2.9rem;
+  padding: 0.125rem;
+}
+
+#donate .ltn-progress-bar_wrapper .ltn-progress-bar .ltn-progress-bar__value {
+  background: #FBF3C6;
+  border-radius: 2rem;
+  height: 2rem;
+}
+
+#donate .ltn-progress-bar_wrapper .ltn-donation-progress {
+  margin: 1.5rem auto 0;
+  font-family: RobotoSlab-Bold;
+  font-size: 33px;
+  color: #010D14;
+  letter-spacing: -0.29px;
+  text-align: center;
 }
 
 /*# sourceMappingURL=index.css.map */

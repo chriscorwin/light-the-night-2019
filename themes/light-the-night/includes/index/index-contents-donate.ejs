@@ -22,10 +22,34 @@
 
 
 <%
+
+
+
+function formatMoney(amount, decimalCount = 2, decimal = ".", thousands = ",") {
+  try {
+    decimalCount = Math.abs(decimalCount);
+    decimalCount = isNaN(decimalCount) ? 2 : decimalCount;
+
+    const negativeSign = amount < 0 ? "-" : "";
+
+    let i = parseInt(amount = Math.abs(Number(amount) || 0).toFixed(decimalCount)).toString();
+    let j = (i.length > 3) ? i.length % 3 : 0;
+
+    return negativeSign + (j ? i.substr(0, j) + thousands : '') + i.substr(j).replace(/(\d{3})(?=\d)/g, "$1" + thousands) + (decimalCount ? decimal + Math.abs(amount - i).toFixed(decimalCount).slice(2) : "");
+  } catch (e) {
+    console.log(e)
+  }
+};
+
+
+
 // Columns from the CSV
 const amountIdx = 5;
 const cityIdx = 8;
 const stateIdx = 9;
+let totalAmountRaised = 0.0;
+let goalToRaise = 1000000.0;
+let percentageOfGoalRaised = 0;
 // An object with city names as the key for easy accumulation by city
 const citySums = localization.contestData.slice(1).reduce(
     (cities, row) => {
@@ -35,10 +59,14 @@ const citySums = localization.contestData.slice(1).reduce(
         const amount = row[amountIdx];
         if (!cities[city]) cities[city] = { state: state, amount: 0 };
         cities[city].amount += parseFloat(amount);
+        totalAmountRaised += parseFloat(amount);
         return cities
     },
     {}
 );
+
+percentageOfGoalRaised = Math.floor(goalToRaise / totalAmountRaised);
+
 /*
    An array of objects, sorted by their amount descending.  The objects look like this:
     {
@@ -60,3 +88,17 @@ const cities = Object.entries(citySums).map(mergeCityName).sort(descendingSorter
 -->
 
 <%- include(`includes/${locals.urlSlug}/${locals.urlSlug}-contents-donate-table`, {'citiesDescendingOrder': cities}) _%>
+
+
+<div class="ltn-progress-bar_wrapper">
+  <h2><%- localization.content.donationProgressHeading %></h2>
+
+  <div class="ltn-progress-bar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="<%- `${percentageOfGoalRaised}`%>" role="progressbar">
+    <span class="ltn-progress-bar__value" style="width:<%- `${percentageOfGoalRaised}`%>%">
+      <span class="ltn-assistive-text">Progress: <%- `${percentageOfGoalRaised}`%>%</span>
+    </span>
+  </div>
+  <p class="ltn-donation-progress">
+    $<%- `${formatMoney(totalAmountRaised)}` %> / $1,000,000
+  </p>
+</div>

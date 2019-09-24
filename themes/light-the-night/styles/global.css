@@ -7189,4 +7189,71 @@ img {
   }
 }
 
+.ltn-progress-bar {
+  display: block;
+  width: 100%;
+  height: 0.5rem;
+  background: #dddbda;
+  border: 0;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  position: relative;
+}
+
+.ltn-progress-bar_x-small, .ltn-progress-bar--x-small {
+  height: 0.125rem;
+}
+
+.ltn-progress-bar_small, .ltn-progress-bar--small {
+  height: 0.25rem;
+}
+
+.ltn-progress-bar_medium, .ltn-progress-bar--medium {
+  height: 0.5rem;
+}
+
+.ltn-progress-bar_large, .ltn-progress-bar--large {
+  height: 0.75rem;
+}
+
+.ltn-progress-bar_circular, .ltn-progress-bar--circular {
+  border-radius: 0.5rem;
+}
+
+.ltn-progress-bar_circular .ltn-progress-bar__value, .ltn-progress-bar--circular .ltn-progress-bar__value {
+  border-radius: 0.5rem;
+}
+
+.ltn-progress-bar__value {
+  display: block;
+  background: #5eb4ff;
+  height: 100%;
+}
+
+.ltn-progress-bar__value_success {
+  background: #4bca81;
+}
+
+.ltn-progress-bar_vertical {
+  height: 100%;
+  width: 0.5rem;
+}
+
+.ltn-progress-bar_vertical.ltn-progress-bar_x-small {
+  width: 0.125rem;
+}
+
+.ltn-progress-bar_vertical.ltn-progress-bar_small {
+  width: 0.25rem;
+}
+
+.ltn-progress-bar_vertical.ltn-progress-bar_medium {
+  width: 0.5rem;
+}
+
+.ltn-progress-bar_vertical.ltn-progress-bar_large {
+  width: 0.75rem;
+}
+
 /*# sourceMappingURL=global.css.map */
