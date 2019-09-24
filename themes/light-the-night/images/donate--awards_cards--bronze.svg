@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="392px" height="208px" viewBox="0 0 392 208" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 58 (84663) - https://sketch.com -->
+    <title>donate--awards_cards--bronze</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="50%" y1="8.15076264%" x2="50%" y2="99.789092%" id="linearGradient-1">
+            <stop stop-color="#FFFBF5" offset="0%"></stop>
+            <stop stop-color="#FFF6EB" offset="79.8146818%"></stop>
+            <stop stop-color="#FFEEDE" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Website-v2" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="light-the-night-2019___desktop-layout" transform="translate(-654.000000, -3181.000000)">
+            <g id="section___section--donate" transform="translate(0.000000, 2602.000000)">
+                <g id="donate--awards" transform="translate(248.000000, 123.000000)">
+                    <g id="donate--awards_cards" transform="translate(0.000000, 462.000000)">
+                        <g id="donate--awards_cards--bronze" transform="translate(412.000000, 0.000000)">
+                            <rect id="award-background--bronze" stroke="#F0B173" stroke-width="6" fill="url(#linearGradient-1)" stroke-linecap="round" x="-3" y="-3" width="386" height="202" rx="12"></rect>
+                            <g id="amount-raised--bronze" transform="translate(0.000000, 128.000000)">
+                                <path d="M0,0 L380,0 L380,64 C380,66.209139 378.209139,68 376,68 L4,68 C1.790861,68 2.705415e-16,66.209139 0,64 L0,0 L0,0 Z" id="amount-raised-background--bronze" fill="#F0B173"></path>
+                                <text id="dyn-data___amount-raised--bronze" font-family="RobotoSlab-Light, Roboto Slab" font-size="36" font-weight="300" letter-spacing="-1.69411765" fill="#010D14">
+                                    <tspan x="122.009272" y="48">$7,380.03</tspan>
+                                </text>
+                            </g>
+                            <text id="dyn-data___state-name--bronze" font-family="TrendSansOne, Trend Sans" font-size="24" font-weight="300" letter-spacing="-1.12941176" fill="#6A6A6A">
+                                <tspan x="131.788941" y="112">Indiana</tspan>
+                            </text>
+                            <text id="dyn-data___city-name--bronze" font-family="TrendSansOne, Trend Sans" font-size="36" font-weight="300" letter-spacing="-1.69411765" fill="#010D14">
+                                <tspan x="45.0907059" y="85">Indianapolis</tspan>
+                            </text>
+                            <text id="award-label--bronze" font-family="RobotoSlab-Light, Roboto Slab" font-size="28" font-weight="300" letter-spacing="-1.31764706" fill="#010D14">
+                                <tspan x="122.920887" y="44">Third Place</tspan>
+                            </text>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,73 @@
+
+
+<div class="contest-data-table_wrapper">
+<table class="contest-data-table ltn-table ltn-table_cell-buffer ltn-table_striped ">
+	<thead>
+		<tr class="ltn-line-height_reset">
+			<th class="" scope="col">
+				<div class="ltn-truncate" title="Rank">Rank</div>
+			</th>
+			<th class="" scope="col">
+				<div class="ltn-truncate" title="State">State</div>
+			</th>
+			<th class="" scope="col">
+				<div class="ltn-truncate" title="City">City</div>
+			</th>
+			<th class="" scope="col">
+				<div class="ltn-truncate" title="Amount">Amount</div>
+			</th>
+			<th class="" scope="col">
+				<div class="ltn-truncate" title="Action">Action</div>
+			</th>
+		</tr>
+		</thead>
+	<tbody>
+<%
+	locals.citiesDescendingOrder.forEach(function(rowData, RowIndex) {
+
+		if (RowIndex >= 3 && RowIndex <= 9) {
+			console.log(`DONATE rowData (${RowIndex}): `, rowData);
+			let tableRowHtmlOut = '';
+			tableRowHtmlOut += `<tr class="ltn-hint-parent">`;
+			// rowData.forEach(function(node, index) {
+			// 	if (index === 0) { 
+			// 		const abbr = rowData[columnindex];
+			// 		const stateName = localization.abbToName(abbr);
+			// 		tableRowHtmlOut += `<th data-label="${stateName}" scope="row">`;
+			// 		tableRowHtmlOut += `<div class="ltn-truncate" title="${stateName}">`;
+			// 		tableRowHtmlOut += `<a href="javascript:void(0);" tabindex="-1">${stateName}</a>`;
+			// 		tableRowHtmlOut += `</div>`;
+			// 		tableRowHtmlOut += `</th>`;
+			// 	} else {
+					tableRowHtmlOut += `<td data-label="${RowIndex + 1}">`;
+					tableRowHtmlOut += `<div class="ltn-truncate" title="${RowIndex + 1}">${RowIndex + 1}</div>`;
+					tableRowHtmlOut += `</td>`;
+
+					tableRowHtmlOut += `<td data-label="${rowData.state}">`;
+					tableRowHtmlOut += `<div class="ltn-truncate" title="${rowData.state}">${rowData.state}</div>`;
+					tableRowHtmlOut += `</td>`;
+
+					tableRowHtmlOut += `<td data-label="${rowData.city}">`;
+					tableRowHtmlOut += `<div class="ltn-truncate" title="${rowData.city}">${rowData.city}</div>`;
+					tableRowHtmlOut += `</td>`;
+
+					tableRowHtmlOut += `<td data-label="${rowData.amount}">`;
+					tableRowHtmlOut += `<div class="ltn-truncate" title="${rowData.amount}">${rowData.amount}</div>`;
+					tableRowHtmlOut += `</td>`;
+
+
+					tableRowHtmlOut += `<td data-label="Action">`;
+					tableRowHtmlOut += `<div class="ltn-truncate" title="Donate"><button class="ltn-button ltn-button-walk">Donate</button></div>`;
+					tableRowHtmlOut += `</td>`;
+				// }
+			tableRowHtmlOut += `</tr>`;
+			// });
+			echo(`${tableRowHtmlOut}`);
+		} else {
+
+		}
+	});
+%>
+	</tbody>
+</table>
+</div>

@@ -9,7 +9,7 @@
  * @variant
  */
 .ltn-table {
-  background-color: #033F6C;
+  background-color: #063F6C;
   font-size: inherit;
   /**
    * Default Table Row Hover
@@ -81,7 +81,7 @@
 .ltn-table:not(.ltn-no-row-hover) tbody tr:hover > th,
 .ltn-table:not(.ltn-no-row-hover) tbody tr:focus > td,
 .ltn-table:not(.ltn-no-row-hover) tbody tr:focus > th {
-  background-color: #2B83C8; }
+  background-color: #0d5690; }
 
 .ltn-table tbody tr.ltn-is-selected > td,
 .ltn-table tbody tr.ltn-is-selected > th,
@@ -213,7 +213,7 @@
 .ltn-table_striped tbody tr:nth-of-type(even) > th,
 .ltn-table--striped tbody tr:nth-of-type(even) > td,
 .ltn-table--striped tbody tr:nth-of-type(even) > th {
-  background-color: #2B83C8; }
+  background-color: #0d5690; }
 
 /**
  * @summary Set table to use fixed layout for width and truncation purposes
@@ -975,7 +975,7 @@
  * @modifier
  */
 .ltn-no-cell-focus .ltn-has-focus {
-  background: #2B83C8;
+  background: #0d5690;
   box-shadow: none; }
 
 .ltn-no-cell-focus .ltn-has-focus .ltn-th__action,

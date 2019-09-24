@@ -1,5 +1,45 @@
-#sponsor-logos img {
-  width: 10rem;
+.ltn-container_x-large {
+  overflow-x: hidden;
+}
+
+#content h1 {
+  z-index: 200;
+  color: white;
+  position: relative;
+  text-transform: uppercase;
+  margin: 3.4rem auto 0;
+  padding: 0;
+}
+
+#content h2 {
+  z-index: 200;
+  color: white;
+  position: relative;
+  margin: -25px auto 0;
+  font-weight: 100;
+}
+
+#hero-sky {
+  background-image: url("../images/light-the-night___hero-image.png");
+  background-repeat: no-repeat;
+  z-index: 0;
+  width: 100%;
+  height: 1100px;
+  position: absolute;
+  top: 0;
+  background-size: contain;
+}
+
+.hero-container {
+  background-image: url("../images/light-the-night___hero-image.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top, center;
+}
+
+#CTA-buttons, #sponsor-logos {
+  z-index: 10;
+  position: relative;
 }
 
 #CTA-buttons a, #sponsor-logos a {
@@ -14,9 +54,27 @@
   height: 50%;
 }
 
-#sponsor-logos a.clickable-image img {
-  width: 25%;
-  height: 25%;
+#sponsor-logos {
+  margin: 90px 25vw 330px;
+}
+
+#sponsor-logos a.clickable-image img#sponsor-logo--leukemia-and-lymphoma-society {
+  width: 63%;
+  margin: 14px 100px 0 0;
+}
+
+#CTA-buttons_wrapper {
+  padding-bottom: 5rem;
+}
+
+#CTA-buttons {
+  margin: 0 13vw;
+}
+
+#CTA-buttons a.clickable-image img {
+  display: block;
+  width: 88%;
+  height: 88%;
 }
 
 #contest-data-table {
@@ -33,28 +91,51 @@
   height: auto;
 }
 
-#label-gold--state::before {
-  display: block;
-  content: 'HI THERE';
-  height: 200px;
-  width: 200px;
+#walk {
+  background-image: url(../images/walk--background-image.png);
+  background-color: #012f4c;
+  background-size: contain;
+  padding: 70px 0;
+  background-repeat: no-repeat;
+}
+
+#walk h3 {
+  z-index: 200;
+  color: white;
+  font-weight: 100;
+  font-size: 3.75rem;
+}
+
+#walk .contest-data-table_wrapper {
+  width: 80%;
+  margin: 4rem auto 400px;
+  border: 1px solid #0B5790;
 }
 
 #donate {
   background-image: url("../images/donate--background-image.png");
   background-color: #5B3E22;
+  background-size: cover;
 }
 
-h3 {
-  font-family: TrendSansOne;
-  font-size: 3rem;
-  color: #FFFFFF;
-  letter-spacing: -6.82px;
-  text-align: center;
-  text-shadow: 0 4px 0 #010D14;
-  line-height: 3rem;
+#donate #trophy-gold_wrapper {
+  margin-bottom: -100px;
+}
+
+#donate #fundrasing-progress {
+  margin: 0 18vw;
+}
+
+#donate #fundrasing-progress .donate-place-card svg {
   margin: 0 auto;
-  padding: 0;
+  display: block;
+  width: 80%;
+}
+
+#donate .contest-data-table_wrapper {
+  width: 80%;
+  margin: 4rem auto 400px;
+  border: 1px solid #0B5790;
 }
 
 /*# sourceMappingURL=index.css.map */
