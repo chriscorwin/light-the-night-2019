@@ -23,12 +23,10 @@
 		</thead>
 	<tbody>
 <%
-	localization.contestData.forEach(function(rowData, RowIndex) {
-		console.log(`rowData: `, rowData);
+  const sortedByDate = localization.contestData.slice(1).sort((l,r) => l[6] > r[6] ? 1 : -1);
+	sortedByDate.forEach(function(rowData, RowIndex) {
+		  /* console.log(`rowData: `, rowData); */
 
-		if (RowIndex === 0) {
-
-		} else {
 			let tableRowHtmlOut = '';
 			tableRowHtmlOut += `<tr class="ltn-hint-parent">`;
 			localization.contestTableRowCellsToShow.forEach(function(columnIndex, index) {
@@ -55,8 +53,6 @@
 			tableRowHtmlOut += `</td>`;
 			tableRowHtmlOut += `</tr>`;
 			echo(`${tableRowHtmlOut}`);
-
-		}
 	});
 %>
 	</tbody>
