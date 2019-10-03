@@ -21,44 +21,42 @@
 			</th>
 		</tr>
 		</thead>
-	<tbody>
-<%
-	localization.contestData.forEach(function(rowData, RowIndex) {
-		console.log(`rowData: `, rowData);
+	  <tbody>
+        <%
+        const sortedByDate = localization.contestData.slice(1).sort((l,r) => l[6] > r[6] ? 1 : -1);
+	      sortedByDate.forEach(function(rowData, RowIndex) {
+		        /* console.log(`rowData: `, rowData); */
 
-		if (RowIndex === 0) {
-
-		} else {
-			let tableRowHtmlOut = '';
-			tableRowHtmlOut += `<tr class="ltn-hint-parent">`;
-			localization.contestTableRowCellsToShow.forEach(function(columnIndex, index) {
-				if (index === 0) { 
-					const abbr = rowData[columnIndex];
-					const stateName = localization.abbToName(abbr);
-					tableRowHtmlOut += `<th data-label="${stateName}" scope="row">`;
-					tableRowHtmlOut += `<div class="ltn-truncate" title="${stateName}">${stateName}</div>`;
-					tableRowHtmlOut += `</th>`;
-				} else if (index === 2) { 
-					const abbr = rowData[columnIndex];
-					const stateName = localization.abbToName(abbr);
-					tableRowHtmlOut += `<td class="ltn-table_cell-align-right" data-label="${rowData[columnIndex]}">`;
-					tableRowHtmlOut += `<div class="ltn-truncate " title="${rowData[columnIndex]}">${rowData[columnIndex]}</div>`;
-					tableRowHtmlOut += `</td>`;
-				} else {
-					tableRowHtmlOut += `<td data-label="${rowData[columnIndex]}">`;
-					tableRowHtmlOut += `<div class="ltn-truncate" title="${rowData[columnIndex]}">${rowData[columnIndex]}</div>`;
-					tableRowHtmlOut += `</td>`;
-				}
-			});
-			tableRowHtmlOut += `<td data-label="Action">`;
-				tableRowHtmlOut += `<div class="ltn-truncate" title="Sign up to walk"><button class="ltn-button ltn-button--primary">Sign up to walk</button></div>`;
-			tableRowHtmlOut += `</td>`;
-			tableRowHtmlOut += `</tr>`;
-			echo(`${tableRowHtmlOut}`);
-
-		}
-	});
-%>
+			      let tableRowHtmlOut = '';
+			      tableRowHtmlOut += `<tr class="ltn-hint-parent">`;
+			      localization.contestTableRowCellsToShow.forEach(function(columnIndex, index) {
+				        if (index === 0) {
+					          const abbr = rowData[columnIndex];
+					          const stateName = localization.abbToName(abbr);
+					          tableRowHtmlOut += `<th data-label="${stateName}" scope="row">`;
+					          tableRowHtmlOut += `<div class="ltn-truncate" title="${stateName}">${stateName}</div>`;
+					          tableRowHtmlOut += `</th>`;
+				        } else if (index === 2) {
+					          const abbr = rowData[columnIndex];
+					          const stateName = localization.abbToName(abbr);
+					          tableRowHtmlOut += `<td class="ltn-table_cell-align-right" data-label="${rowData[columnIndex]}">`;
+					          tableRowHtmlOut += `<div class="ltn-truncate " title="${rowData[columnIndex]}">${rowData[columnIndex]}</div>`;
+					          tableRowHtmlOut += `</td>`;
+				        } else {
+					          tableRowHtmlOut += `<td data-label="${rowData[columnIndex]}">`;
+					          tableRowHtmlOut += `<div class="ltn-truncate" title="${rowData[columnIndex]}">${rowData[columnIndex]}</div>`;
+					          tableRowHtmlOut += `</td>`;
+				        }
+			      });
+			      tableRowHtmlOut += `<td data-label="Action">`;
+			      tableRowHtmlOut += `<div class="ltn-truncate" title="Sign up to walk">
+                    <a class="ltn-button ltn-button--primary" href="${rowData[11]}" rel="noopener" target="_blank" >Sign up to walk</a>
+                </div>`;
+			      tableRowHtmlOut += `</td>`;
+			      tableRowHtmlOut += `</tr>`;
+			      echo(`${tableRowHtmlOut}`);
+	      });
+        %>
 	</tbody>
 </table>
 </div>
