@@ -65,7 +65,10 @@ const citySums = localization.contestData.slice(1).reduce(
     {}
 );
 
-percentageOfGoalRaised = Math.floor(goalToRaise / totalAmountRaised);
+percentageOfGoalRaised = Math.floor((totalAmountRaised / goalToRaise) * 100);
+console.log(`percentageOfGoalRaised: `, percentageOfGoalRaised);
+console.log(`goalToRaise: `, goalToRaise);
+console.log(`totalAmountRaised: `, totalAmountRaised);
 
 /*
    An array of objects, sorted by their amount descending.  The objects look like this:
@@ -81,6 +84,8 @@ const cities = Object.entries(citySums).map(mergeCityName).sort(descendingSorter
 %>
 <script>
   const citiesDescendingOrder = <%- JSON.stringify(cities, null, 2); %>;
+
+
 </script>
 
 <!-- City Data, printed out for dev convenience
