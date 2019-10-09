@@ -16,9 +16,11 @@
 			<th class="" scope="col">
 				<div class="ltn-truncate" title="Amount">Amount</div>
 			</th>
+<!-- 			
 			<th class="" scope="col">
 				<div class="ltn-truncate" title="Action">Action</div>
 			</th>
+-->
 		</tr>
 		</thead>
 	<tbody>
@@ -40,14 +42,14 @@
 				tableRowHtmlOut += `<div class="ltn-truncate" title="${rowData.city}">${rowData.city}</div>`;
 				tableRowHtmlOut += `</td>`;
 
-				tableRowHtmlOut += `<td class="ltn-table_cell-align-right" data-label="${rowData.amount}">`;
+				tableRowHtmlOut += `<td class="" data-label="${rowData.amount}">`;
 				tableRowHtmlOut += `<div class="ltn-truncate" title="$${formatMoney(rowData.amount)}">$${formatMoney(rowData.amount)}</div>`;
 				tableRowHtmlOut += `</td>`;
 
 
-				tableRowHtmlOut += `<td data-label="Action">`;
-				tableRowHtmlOut += `<div class="ltn-truncate" title="Donate"><button class="ltn-button ltn-button--neutral">Donate</button></div>`;
-				tableRowHtmlOut += `</td>`;
+				// tableRowHtmlOut += `<td data-label="Action">`;
+				// tableRowHtmlOut += `<div class="ltn-truncate" title="Donate"><button class="ltn-button ltn-button--neutral">Donate</button></div>`;
+				// tableRowHtmlOut += `</td>`;
 			tableRowHtmlOut += `</tr>`;
 			echo(`${tableRowHtmlOut}`);
 		} else {
