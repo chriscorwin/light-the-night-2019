@@ -55,12 +55,12 @@
 }
 
 #sponsor-logos {
-  margin: 90px 25vw 330px;
+  margin: 5rem auto 11rem;
 }
 
 #sponsor-logos a.clickable-image img#sponsor-logo--leukemia-and-lymphoma-society {
   width: 63%;
-  margin: 14px 100px 0 0;
+  margin: 14px auto 0 auto;
 }
 
 #CTA-buttons_wrapper {
@@ -75,6 +75,7 @@
   display: block;
   width: 88%;
   height: 88%;
+  margin: 2rem auto;
 }
 
 #trophy-gold_wrapper {
@@ -147,7 +148,7 @@
 }
 
 #donate #fundrasing-progress {
-  margin: 0 18vw;
+  margin: 5rem auto 11rem;
 }
 
 #donate #fundrasing-progress .donate-place-card svg {
