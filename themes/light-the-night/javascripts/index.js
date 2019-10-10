@@ -54,7 +54,7 @@ const firstPlaceCityAmount = Math.floor(citiesDescendingOrder[0].amount);
 
 console.log(`typeof firstPlaceCityAmount: `, typeof firstPlaceCityAmount);
 
-amountRaisedGoldTspan.textContent = '$' + formatMoney(firstPlaceCityAmount);
+amountRaisedGoldTspan.textContent = '$' + formatMoney(firstPlaceCityAmount, 0);
 
 
 
@@ -123,5 +123,3 @@ const thirdPlaceCityAmount = Math.floor(citiesDescendingOrder[2].amount);
 console.log(`typeof thirdPlaceCityAmount: `, typeof thirdPlaceCityAmount);
 
 amountRaisedBronzeTspan.textContent = '$' + formatMoney(thirdPlaceCityAmount);
-
-

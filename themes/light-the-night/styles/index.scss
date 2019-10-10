@@ -55,7 +55,7 @@
 	a {
 		display: block;
 		cursor: pointer;
-	
+
 		&.clickable-image {
 
 			img {
@@ -114,13 +114,13 @@
 #trophy-gold_wrapper {
 	margin: 0 auto;
 	width: 510px;
+	max-width: 800px;
 
 	svg {
 		width: 100%;
 		height: auto;
 	}
 }
-
 
 
 #walk {
@@ -161,9 +161,9 @@
 				padding: 0.75rem 0.5rem 0.45rem;
 
 			}
-			&.ltn-table_striped tbody tr:nth-of-type(even) > td, 
-			&.ltn-table_striped tbody tr:nth-of-type(even) > th, 
-			&.ltn-table--striped tbody tr:nth-of-type(even) > td, 
+			&.ltn-table_striped tbody tr:nth-of-type(even) > td,
+			&.ltn-table_striped tbody tr:nth-of-type(even) > th,
+			&.ltn-table--striped tbody tr:nth-of-type(even) > td,
 			&.ltn-table--striped tbody tr:nth-of-type(even) > th {
 			}
 
@@ -193,7 +193,7 @@
 		letter-spacing: -6.82px;
 		text-align: center;
 		text-shadow: 0 4px 0 #010D14;
-		
+
 	}
 
 	#trophy-gold_wrapper {
@@ -205,9 +205,9 @@
 	#fundrasing-progress {
 		margin: 5rem auto 11rem;
 
-		
+
 		.donate-place-card {
-			
+
 			svg {
 				margin: 0 auto;
 				display: block;
@@ -220,7 +220,7 @@
 
 	.contest-data-table_wrapper {
 		// max-width: 100%;
-		margin: 4rem 20vw 4rem 20vw ;
+		margin: 4rem ;
 		border: 1px solid #0B5790;
 
 		.contest-data-table {
@@ -243,9 +243,9 @@
 				padding: 0.75rem 0.5rem 0.45rem;
 
 			}
-			&.ltn-table_striped tbody tr:nth-of-type(even) > td, 
-			&.ltn-table_striped tbody tr:nth-of-type(even) > th, 
-			&.ltn-table--striped tbody tr:nth-of-type(even) > td, 
+			&.ltn-table_striped tbody tr:nth-of-type(even) > td,
+			&.ltn-table_striped tbody tr:nth-of-type(even) > th,
+			&.ltn-table--striped tbody tr:nth-of-type(even) > td,
 			&.ltn-table--striped tbody tr:nth-of-type(even) > th {
 				background-color: #BC8D60;
 			}
@@ -296,5 +296,5 @@
 
 	}
 
-	
+
 }

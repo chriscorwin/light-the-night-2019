@@ -81,6 +81,7 @@
 #trophy-gold_wrapper {
   margin: 0 auto;
   width: 510px;
+  max-width: 800px;
 }
 
 #trophy-gold_wrapper svg {
@@ -158,7 +159,7 @@
 }
 
 #donate .contest-data-table_wrapper {
-  margin: 4rem 20vw 4rem 20vw;
+  margin: 4rem;
   border: 1px solid #0B5790;
 }
 

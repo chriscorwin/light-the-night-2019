@@ -50,13 +50,13 @@
                                 </g>
                             </g>
                             <text id="dyn-data___amount-raised--gold" font-family="TrendSansOne, Trend Sans" font-size="38" font-weight="300" letter-spacing="-3" fill="#080707">
-                                <tspan x="221.126" y="216">$38,221.00</tspan>
+                                <tspan x="327" y="216" text-anchor="middle">$38,221.00</tspan>
                             </text>
                             <text id="dyn-data___state-name--gold" font-family="TrendSansOne, Trend Sans" font-size="24" font-weight="300" letter-spacing="-1.12941176" fill="#FFFFFF">
-                                <tspan x="268.205647" y="144">VIRGINIA</tspan>
+                                <tspan x="330" y="144" text-anchor="middle">VIRGINIA</tspan>
                             </text>
                             <text id="dyn-data___city-name--gold" font-family="TrendSansOne, Trend Sans" font-size="60" font-weight="300" letter-spacing="-2.82352941" fill="#FFFFFF">
-                                <tspan x="196.210588" y="116">RESTON</tspan>
+                                <tspan x="330" y="116" text-anchor="middle">RESTON</tspan>
                             </text>
                         </g>
                     </g>
