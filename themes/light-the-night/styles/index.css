@@ -142,6 +142,13 @@
   text-shadow: 0 4px 0 #010D14;
 }
 
+#donate h4 {
+  font-family: RobotoSlab-Regular;
+  font-size: 24px;
+  color: #FFFFFF;
+  text-align: center;
+}
+
 #donate #trophy-gold_wrapper {
   margin-bottom: -100px;
   margin-top: -110px;
